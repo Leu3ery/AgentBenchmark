@@ -1,0 +1,11 @@
+1. Correct — Reliability Engineering team.
+Source: docs/operations.md; corroborated by docs/incident_roles.md and docs/team_directory.md.
+
+2. Correct — 15 minutes for first response.
+Source: docs/operations.md.
+
+3. Correct — "Improve customer retention by 4 points."
+Source: docs/quarterly_plan.md.
+
+4. Correct — Customer Communications function.
+Source: docs/incident_roles.md; corroborated by docs/team_directory.md.

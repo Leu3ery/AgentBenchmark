@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-15T14:22:34+00:00",
+    "agent_id": "task_003_data_analysis-router",
+    "event_type": "agent_start",
+    "message": "Agent task_003_data_analysis-router started",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-03-15T14:22:34+00:00",
+    "agent_id": "task_003_data_analysis-router",
+    "event_type": "llm_start",
+    "message": null,
+    "payload": {
+      "prompt_preview": "Return only the structured router decision.",
+      "input_items_count": 1
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:38+00:00",
+    "agent_id": "task_003_data_analysis-router",
+    "event_type": "llm_end",
+    "message": null,
+    "payload": {
+      "response_id": "resp_0d6685b14cd92ac20069b6c0ab4e7881a1a3efa3855d04a361",
+      "usage": {
+        "input_tokens": 286,
+        "output_tokens": 194,
+        "total_tokens": 480
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:38+00:00",
+    "agent_id": "task_003_data_analysis-router",
+    "event_type": "agent_end",
+    "message": "Agent task_003_data_analysis-router completed",
+    "payload": {
+      "output_preview": "{\"selected_route\": \"data_analysis\", \"reason\": \"The task requires computing numerical revenue growth between two months and producing an executive summary\\u2014this aligns with the data_analysis route which can run calculations, generate summary text, and optionally save artifacts in the workspace.\", \"confidence\": 0.9}"
+    }
+  }
+]

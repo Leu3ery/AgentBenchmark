@@ -1,0 +1,22 @@
+Summary (reviewer):
+
+Files inspected/updated
+- backend/statuses.py
+  - STATUSES includes "archived"
+  - STATUS_LABELS contains "archived": "Archived"
+  - TERMINAL_STATUSES contains "archived"
+  - is_valid_status / is_terminal_status present and consistent
+- validation/schema.py
+  - ALLOWED_STATUS includes "archived"
+  - normalize_status and validate_payload use normalized value; payload validation accepts "archived"
+- api/serializer.py
+  - Uses STATUS_LABELS for status_label, so serialization supports "archived" via the backend mapping
+
+Checks run
+- Ran tests with PYTHONPATH set so package imports resolve:
+  - Command: PYTHONPATH=. pytest -q
+  - Result: 4 passed in 0.01s
+
+Notes
+- I verified consistency across the backend catalog, validation layer, and serialization path for the new "archived" status.
+- All tests pass; no regressions observed.

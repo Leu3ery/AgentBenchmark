@@ -1,0 +1,35 @@
+{
+  "summary_date":"2026-03-15",
+  "most_recent_enforcement_milestone":{
+    "date_effective":"2025-08-02",
+    "description":"Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 came into application (includes obligations for providers of general-purpose AI models and certain governance provisions).",
+    "primary_source":{
+      "title":"Regulation (EU) 2024/1689 (Artificial Intelligence Act) - Official Journal",
+      "publication_date":"2024-07-12",
+      "citation_line":"Article 113: 'Chapters I and II shall apply from 2 February 2025; Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025'",
+      "ref_id":"turn3view0 / turn5view0 (dataguidance pdf copy of OJ L, 12.7.2024)"
+    }
+  },
+  "next_obligations":{
+    "near_term":"2026-08-02 - majority of rules come into application (rules for high-risk AI in Annex III, transparency rules under Article 50, enforcement by national and EU authorities, innovation support measures)",
+    "later":"2027-08-02 - Article 6(1) and corresponding obligations apply; additional high-risk rules for AI embedded in regulated products apply",
+    "sources":[
+      {"title":"AI Act Service Desk - Timeline for the Implementation of the EU AI Act","url_ref":"turn8view1","note":"timeline page; outlines 02 Feb 2025, 02 Aug 2025, 02 Aug 2026, 02 Aug 2027 milestones"},
+      {"title":"Regulation (EU) 2024/1689 - Article 113 (Entry into force and application)","url_ref":"turn5view0","publication_date":"2024-07-12"}
+    ]
+  },
+  "key_uncertainties_for_product_teams":[
+    "Classification ambiguity: how Article 6 and delegated/guidance acts will define which systems are 'high-risk' in practice (implementing/delegated acts & Commission guidance expected).",
+    "Harmonised standards & conformity assessments: availability/timing of harmonised standards, notified bodies and conformity assessment templates will affect how to demonstrate compliance (some implementing acts due before applicability dates).",
+    "GPAI systemic-risk designation: thresholds and timing (notification to AI Office; Commission may designate models presenting systemic risk).",
+    "Enforcement capacity & national divergence: Member States must adopt penalty rules and designate competent authorities by application dates — differences across countries are likely until enforcement practice stabilises.",
+    "Interplay with other laws and secondary acts: GDPR, sectoral product safety/medical/device law interactions, and upcoming implementing/delegated acts (timing uncertain)."
+  ],
+  "sources_notes":[
+    {"source":"Regulation (EU) 2024/1689 (Official Journal)","publication_date":"12 July 2024","ref":"turn3view0 / turn5view0 (OJ PDF)"},
+    {"source":"European Commission - 'AI Act enters into force' (press release)","publication_date":"1 August 2024","ref":"turn8view0"},
+    {"source":"AI Act Service Desk - Implementation Timeline","accessed":"2026-03-15","ref":"turn8view1"},
+    {"source":"Orrick - 'The EU AI Act: Key Dates for Compliance' (guidance) ","accessed":"2026-03-15","ref":"turn10view0"},
+    {"source":"AP News - EU unveils Code of Practice for general-purpose AI (news)","publication_date":"10 July 2025","ref":"turn9view0"}
+  ]
+}

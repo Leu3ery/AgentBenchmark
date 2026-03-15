@@ -1,0 +1,15 @@
+Title: Category growth snapshot for February review
+
+You are preparing a quick readout for the commercial leadership team.
+
+Business question:
+- Which 3 categories showed the strongest revenue growth from January 2026 to February 2026?
+
+Important interpretation rule:
+- Rank categories by absolute revenue delta, not percentage growth.
+
+Output expectations:
+- List the top 3 categories in rank order
+- Include the revenue delta for each
+- Add a short executive summary in plain English
+- Mention at least one weaker or negative trend so the summary is balanced

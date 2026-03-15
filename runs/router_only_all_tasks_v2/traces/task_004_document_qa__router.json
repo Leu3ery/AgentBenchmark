@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-15T15:00:25+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "agent_start",
+    "message": "Agent task_004_document_qa-router started",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-03-15T15:00:25+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "llm_start",
+    "message": null,
+    "payload": {
+      "prompt_preview": "Return only the structured router decision.",
+      "input_items_count": 1
+    }
+  },
+  {
+    "timestamp": "2026-03-15T15:00:29+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "llm_end",
+    "message": null,
+    "payload": {
+      "response_id": "resp_08ace4ed726f55640069b6c989fdd0819f9962b2c8ef3fabda",
+      "usage": {
+        "input_tokens": 297,
+        "output_tokens": 242,
+        "total_tokens": 539
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-15T15:00:29+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "agent_end",
+    "message": "Agent task_004_document_qa-router completed",
+    "payload": {
+      "output_preview": "{\"selected_route\": \"multi\", \"reason\": \"Questions reference multiple operational policies and KPIs that are likely distributed across several local documents; synthesizing across documents will ensure complete, accurate answers and proper source notes.\", \"confidence\": 0.9}"
+    }
+  }
+]

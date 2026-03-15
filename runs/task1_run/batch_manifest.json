@@ -1,0 +1,20 @@
+{
+  "batch_id": "task1_run",
+  "started_at": "2026-03-15T13:54:03+00:00",
+  "finished_at": "2026-03-15T14:02:44+00:00",
+  "completed_runs": [
+    "task_001_bugfix_csv__router",
+    "task_001_bugfix_csv__single__rep1",
+    "task_001_bugfix_csv__single__rep2",
+    "task_001_bugfix_csv__single__rep3",
+    "task_001_bugfix_csv__single__rep4",
+    "task_001_bugfix_csv__multi__rep1",
+    "task_001_bugfix_csv__multi__rep2",
+    "task_001_bugfix_csv__multi__rep3",
+    "task_001_bugfix_csv__multi__rep4"
+  ],
+  "failed_run_id": null,
+  "aborted": false,
+  "status": "completed",
+  "errors": []
+}

@@ -1,0 +1,19 @@
+I reviewed the inbox and replied where a response was required.
+
+Replied to:
+- email_001 (alex@example.com, "Need confirmation on the workshop date")
+  - Reply: Confirmed the workshop is still planned for next Thursday at 14:00 CET and offered to provide dial-in details or materials if needed.
+  - Reason: Sender asked a direct question about schedule (policy: reply to direct questions; FAQ: workshop time).
+
+- email_003 (maria@example.com, "Need the onboarding checklist")
+  - Reply: Gave the docs portal location and URL (Getting Started > Pilot Setup — https://docs.example.com/pilot-setup) and offered to send the checklist directly or summarize the main steps.
+  - Reason: Sender requested specific documentation (policy: reply to requests for information; FAQ: points to docs portal).
+
+Intentionally skipped (no reply needed):
+- email_002 (billing@example.com, "Invoice received")
+  - Reason: Confirmation only; no question or requested action (policy: do not reply to pure confirmations).
+
+- email_004 (sam@example.com, "Thanks for the quick help")
+  - Reason: Thank-you note with explicit “No action needed” (policy: do not reply to pure thank-you notes).
+
+Replies were saved as draft artifacts in the workspace (.benchmark_artifacts/replies/).

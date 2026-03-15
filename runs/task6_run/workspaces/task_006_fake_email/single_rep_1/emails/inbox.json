@@ -1,0 +1,26 @@
+[
+  {
+    "id": "email_001",
+    "from": "alex@example.com",
+    "subject": "Need confirmation on the workshop date",
+    "body": "Can you confirm whether the workshop is still planned for next Thursday? If the schedule changed, please let me know the new time."
+  },
+  {
+    "id": "email_002",
+    "from": "billing@example.com",
+    "subject": "Invoice received",
+    "body": "This is just a confirmation that we received your payment."
+  },
+  {
+    "id": "email_003",
+    "from": "maria@example.com",
+    "subject": "Need the onboarding checklist",
+    "body": "Hi team, could you send me the onboarding checklist for the pilot workspace setup? Also let me know where I can find the docs portal."
+  },
+  {
+    "id": "email_004",
+    "from": "sam@example.com",
+    "subject": "Thanks for the quick help",
+    "body": "Thanks again for fixing the access issue so quickly. No action needed from my side."
+  }
+]

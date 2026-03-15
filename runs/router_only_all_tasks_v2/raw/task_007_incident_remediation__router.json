@@ -1,0 +1,43 @@
+{
+  "run_id": "task_007_incident_remediation__router",
+  "batch_id": "router_only_all_tasks_v2",
+  "task_id": "task_007_incident_remediation",
+  "strategy": "router",
+  "model": "gpt-5-mini",
+  "started_at": "2026-03-15T15:00:40+00:00",
+  "finished_at": "2026-03-15T15:00:46+00:00",
+  "latency_sec": 5.607,
+  "prompt_tokens": 318,
+  "completion_tokens": 335,
+  "total_tokens": 653,
+  "estimated_cost": 0.00075,
+  "status": "completed",
+  "error_type": null,
+  "error_message": null,
+  "trace_file": "traces/task_007_incident_remediation__router.json",
+  "prompt_checksum": "2f72bec5307be24410d2a17fa9218f30f81bec0fc8d5fcafa92c0974c6041ec7",
+  "input_checksum": "1122753d10fff81a0eafc5a002d80d4890935faf42ea5dedd4713d4ecacd9baf",
+  "task_config_checksum": "055742409514a0b2699fdb7de18d605f0d4dec290dbfab5ae357e9e07cee0072",
+  "timeout_sec": 1800,
+  "nondeterministic": false,
+  "sdk_versions": {
+    "openai": "2.28.0",
+    "openai-agents": "0.12.2",
+    "pydantic": "2.12.5"
+  },
+  "temperature": 0.0,
+  "route_candidates": [
+    "single",
+    "multi"
+  ],
+  "selected_route": "single",
+  "route_reason": "The task is a well-scoped, deterministic engineering remediation that a single developer/agent can investigate, implement a minimal safe fix, add regression tests, and produce a rollout plan in one consolidated response. It does not require parallel or multi-agent coordination.",
+  "route_confidence": 0.92,
+  "final_output_text": "{\n  \"selected_route\": \"single\",\n  \"reason\": \"The task is a well-scoped, deterministic engineering remediation that a single developer/agent can investigate, implement a minimal safe fix, add regression tests, and produce a rollout plan in one consolidated response. It does not require parallel or multi-agent coordination.\",\n  \"confidence\": 0.92\n}",
+  "manual_eval": {
+    "filled_by_user": false,
+    "score_overall": null,
+    "route_was_good_choice": null,
+    "score_notes": null
+  }
+}

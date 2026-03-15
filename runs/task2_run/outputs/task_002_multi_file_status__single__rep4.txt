@@ -1,0 +1,21 @@
+I implemented an "archived" status consistently across the backend catalog, the validation layer, and the API serialization path.
+
+Files changed
+- backend/statuses.py
+  - Added "archived" to STATUSES.
+  - Added "archived": "Archived" to STATUS_LABELS.
+  - Included "archived" in TERMINAL_STATUSES.
+  - Left existing statuses intact.
+
+- validation/schema.py
+  - Added "archived" to ALLOWED_STATUS.
+  - No changes to normalize_status; it already normalizes whitespace/case.
+
+Checks run
+- Ran the test suite:
+  - Command used: PYTHONPATH=. pytest -q
+  - Result: 4 passed in 0.01s
+
+Notes
+- The API serializer uses STATUS_LABELS from backend.statuses, so adding the label there ensures serialization returns "status_label": "Archived" for archived records.
+- Existing statuses and functions (is_valid_status, is_terminal_status, normalize_status) were preserved and extended to include archived.

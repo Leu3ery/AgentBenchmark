@@ -1,0 +1,53 @@
+{
+  "snapshot_date": "2026-03-15",
+  "most_recent_enforcement_milestone": {
+    "summary": "Governance and obligations for providers of general-purpose AI (GPAI) models applied on 2 August 2025; initial 'first rules' (definitions, AI literacy, certain prohibitions) applied on 2 February 2025.",
+    "primary_sources": [
+      {
+        "title": "Navigating the AI Act (European Commission)",
+        "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+        "date": "accessed 2026-03-15",
+        "note": "Commission FAQ lists application dates 2 Feb 2025, 2 Aug 2025, 2 Aug 2026; confirms GPAI obligations applicability 2 Aug 2025."
+      },
+      {
+        "title": "Commission publishes guidelines for providers of general-purpose AI models",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-providers-general-purpose-ai-models",
+        "date": "2025-07-18",
+        "note": "Press release confirming GPAI guidance and 2 Aug 2025 applicability for GPAI obligations."
+      }
+    ]
+  },
+  "next_obligations": {
+    "summary": "2 August 2026 is the next major compliance date when most high-risk obligations (Annex III) and Article 50 transparency requirements become applicable, including risk-management, data governance, technical documentation, human oversight, conformity assessments, EU database registration, and post-market monitoring.",
+    "primary_sources": [
+      {
+        "title": "Navigating the AI Act (European Commission)",
+        "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+        "date": "accessed 2026-03-15"
+      },
+      {
+        "title": "Artificial Intelligence Act (Regulation (EU) 2024/1689) - Official Journal",
+        "url": "https://eur-lex.europa.eu/",
+        "date": "2024-06",
+        "note": "Legal text with Article 113 staggered application dates and Article 72 post-market monitoring requirement."
+      }
+    ]
+  },
+  "key_uncertainties": {
+    "items": [
+      "Status of Commission implementing acts/templates (notably Article 72 post-market monitoring plan template) — deadline 2 Feb 2026 but unclear whether template was published; check OJ/EUR-Lex and AI Office pages.",
+      "Availability of harmonised standards / common specifications and notified bodies — capacity bottlenecks could delay practical conformity assessments.",
+      "Possible legislative adjustments (Digital Omnibus proposal) that could alter application dates or link dates to availability of supporting measures.",
+      "Classification disputes (whether a system is 'high-risk' or qualifies as GPAI) — legal interpretation may vary and may require AI Office/national authority decisions or case law.",
+      "Sectoral interactions with other EU product safety and sector laws (medical devices, vehicles, toys), leading to different clocks/requirements."
+    ],
+    "advice": "Treat 2 Aug 2026 as the scheduled next major date but prepare now: classify systems, document risk-management, build post-market monitoring capability, and monitor Commission/OJ/AI Office updates weekly."
+  },
+  "source_notes": [
+    {"title": "AI Act legal text (Regulation (EU) 2024/1689)", "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj", "date": "2024-06-", "type": "primary"},
+    {"title": "European Commission - Navigating the AI Act (FAQ)", "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act", "date": "accessed 2026-03-15", "type": "primary"},
+    {"title": "Commission guidance: Providers of general-purpose AI models (press release)", "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-providers-general-purpose-ai-models", "date": "2025-07-18", "type": "primary"},
+    {"title": "AI Act Service Desk - Article 72 (post-market monitoring)", "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-72", "date": "accessed 2026-03-15", "type": "primary"},
+    {"title": "AI Watch - First rules of the AI Act are now applicable (news)", "url": "https://ai-watch.ec.europa.eu/news/first-rules-artificial-intelligence-act-are-now-applicable-2025-02-02_en", "date": "2025-02-02", "type": "primary"}
+  ]
+}

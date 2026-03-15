@@ -1,0 +1,19 @@
+Summary — review of "archived" status changes
+
+Files changed
+- backend/statuses.py
+  - "archived" added to STATUSES
+  - STATUS_LABELS["archived"] = "Archived"
+  - "archived" added to TERMINAL_STATUSES
+- validation/schema.py
+  - "archived" added to ALLOWED_STATUS
+
+Notes
+- api/serializer.py already uses STATUS_LABELS for label resolution and required no changes.
+- All touched implementations are consistent: catalog, validation, and serialization resolve the "archived" status and label the same way.
+
+Checks run
+- Ran test suite with PYTHONPATH=. pytest -q
+  - Result: 4 passed
+
+You can proceed; there are no regressions related to adding the "archived" status.

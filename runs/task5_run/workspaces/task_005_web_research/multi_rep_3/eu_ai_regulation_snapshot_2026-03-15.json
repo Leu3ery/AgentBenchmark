@@ -1,0 +1,67 @@
+{
+  "snapshot_date": "2026-03-15",
+  "most_recent_enforcement_milestone": {
+    "description": "Start of GPAI/governance/transparency phase (Chapter V and certain governance/transparency provisions) became applicable",
+    "effective_date": "2025-08-02",
+    "notes": "Commission published General-Purpose AI (GPAI) Code of Practice (10 Jul 2025) and guidance (mid-Jul 2025) to operationalize rules for GPAI.",
+    "primary_source": {
+      "title": "Regulation (EU) 2024/1689 (AI Act) - phased application (Article 113)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/",
+      "date": "2024-07 (OJ publication); Article 113 specifies dates including 2025-08-02"
+    }
+  },
+  "next_obligations": {
+    "description": "Bulk of AI Act (substantive obligations for high-risk AI systems) becomes applicable",
+    "effective_date": "2026-08-02",
+    "key_obligations": [
+      "risk management system",
+      "data governance",
+      "technical documentation",
+      "record-keeping/logs",
+      "human oversight",
+      "accuracy/robustness & cybersecurity",
+      "conformity assessments (notified bodies), registration",
+      "post-market monitoring and market surveillance"
+    ],
+    "primary_source": {
+      "title": "Regulation (EU) 2024/1689 (AI Act), Article 113",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/",
+      "date": "2024-07"
+    }
+  },
+  "key_uncertainties": [
+    "Implementing/delegated acts, templates and harmonised standards availability and timing (some required by early 2026) may be delayed or vary in content",
+    "National competent authority / notified body designation and market surveillance capacity will affect enforcement timing and interpretation across Member States",
+    "Classification risk: guidance on what counts as high-risk or GPAI could change via Commission guidance/delegated acts",
+    "Interaction with other EU laws (GDPR, product safety, copyright, product liability) remains partly open and will be clarified over time",
+    "Digital Omnibus legislative proposals could change certain timelines or simplify requirements (proposal published Nov 19, 2025)"
+  ],
+  "recommended_actions_for_product_teams": [
+    "Treat 2026-08-02 as the primary hard date for high-risk AI compliance work",
+    "Document and defensibly justify classification (high-risk or not) and update when guidance/delegated acts change",
+    "Prepare risk management, technical documentation, logs, post-market monitoring and conformity pathways now",
+    "Monitor Commission implementing/delegated acts, harmonised standards, AI Office guidance, national competent authority designations, and the Digital Omnibus legislative progress"
+  ],
+  "sources": [
+    {
+      "title": "Regulation (EU) 2024/1689 (AI Act)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/",
+      "date": "Official Journal publication 2024-07; Article 113 phased dates include 2025-02-02, 2025-08-02, 2026-08-02, 2027-08-02"
+    },
+    {
+      "title": "European Commission: General-Purpose AI Code of Practice (press) and guidance",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/general-purpose-ai-code-practice-now-available",
+      "date": "2025-07-10 (Code); mid-July 2025 (guidance)"
+    },
+    {
+      "title": "AI Act Service Desk (Commission) — Article pages (classification, templates, post-market)",
+      "url": "https://ai-act-service-desk.ec.europa.eu/",
+      "date": "Service pages summarize implementing act deadlines (accessed 2026-03-15 snapshot)"
+    },
+    {
+      "title": "European Commission: Digital Omnibus proposal (press release)",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/simpler-eu-digital-rules-and-new-digital-wallets-save-billions-businesses-and-boost-innovation",
+      "date": "2025-11-19 (proposal published)"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "summary_date": "2026-03-15",
+  "most_recent_enforcement_milestone": {
+    "description": "Governance chapter and rules for General-Purpose AI (GPAI) — including AI Office powers, penalties framework, and market-surveillance/notified-body provisions — became applicable.",
+    "key_dates": {
+      "AI_Act_entered_into_force": "2024-08-01",
+      "Chapters_I-II_and_prohibitions_applied_from": "2025-02-02",
+      "Governance_and_GPAI_applied_from": "2025-08-02",
+      "High-risk_obligations_general_application": "2026-08-02"
+    },
+    "primary_source": {
+      "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — EUR-Lex",
+      "url": "https://eur-lex.europa.eu/",
+      "date": "2024-07-12 / consolidated",
+      "note": "See timeline and application dates in the AI Act text (OJ / EUR-Lex)."
+    }
+  },
+  "which_obligations_apply_next": {
+    "next_major_application_date": "2026-08-02",
+    "obligations_to_prepare_for": [
+      {"Article": "8", "obligation": "continuous risk-management system"},
+      {"Article": "10", "obligation": "data governance and data quality requirements"},
+      {"Annex/Article": "Annex IV / 11", "obligation": "technical documentation"},
+      {"obligation": "system logging and record-keeping / traceability"},
+      {"Article": "14", "obligation": "human oversight measures"},
+      {"Article": "15", "obligation": "robustness and cybersecurity"},
+      {"Articles": "16, 43-48", "obligation": "conformity assessment and CE-marking where applicable"},
+      {"obligation": "post-market monitoring and serious-incident reporting"}
+    ],
+    "parallel_current_obligations": [
+      {"description": "GPAI-specific governance duties and the voluntary General-Purpose AI Code (published 2025-07-10)", "source": "European Commission press release 2025-07-10"}
+    ],
+    "primary_source": "EUR-Lex AI Act text (consolidated)"
+  },
+  "uncertainties_and_timing_ambiguities": [
+    "Classification of high-risk systems (Article 6) — Commission-level guidance and examples had a statutory deadline (no later than 2026-02-02) but publication was delayed; lack of clear examples creates practical legal uncertainty for teams deciding whether Chapter III applies.",
+    "Availability of harmonised standards and notified-body capacity — standards development and notified-body readiness lag in implementation trackers, affecting conformity-assessment practicality and timing.",
+    "Member-state designation and enforcement variance — national competent authorities and market-surveillance resources vary by Member State, which may lead to uneven enforcement and interpretive differences.",
+    "Interaction with sectoral rules and GDPR — many AI products also fall under product-safety, medical-device, automotive, or data-protection regimes; combined compliance paths can be complex and timing-sensitive.",
+    "GPAI regime nuance — rules for GPAI are in force but the Code of Practice is voluntary; enforcement practices and transition windows for existing vs new models have nuance that teams must track."
+  ],
+  "recommended_immediate_actions_for_product_teams": [
+    "Run a classification readiness review and document rationale for (non-)high-risk determinations (keep Article-6 documentation).",
+    "If potentially high-risk: start/strengthen a risk-management system, prepare Annex IV technical documentation, implement logging and post-market monitoring, map data governance and retention, and identify conformity-assessment route early.",
+    "If using or embedding GPAI: review the General-Purpose AI Code of Practice (EC, 2025-07-10) and engage with AI Office resources.",
+    "Track three sources regularly: EUR-Lex (AI Act consolidated text), European Commission / AI Office publications (guidelines, Codes, templates), and national competent-authority notices for markets of operation."
+  ],
+  "sources": [
+    {"id": 1, "title": "Regulation (EU) 2024/1689 — Artificial Intelligence Act (consolidated)", "url": "https://eur-lex.europa.eu/", "date": "2024-07-12 / consolidated (entered into force 2024-08-01)"},
+    {"id": 2, "title": "European Commission press release: General-Purpose AI Code of Practice", "url": "https://ec.europa.eu/commission/presscorner/", "date": "2025-07-10"},
+    {"id": 3, "title": "AI Act Service Desk — Article 6 (High-risk classification) page", "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-6", "date": "page updated continuously; referenced 2026-03"},
+    {"id": 4, "title": "Industry/legal analyses on standards and notified-body readiness (example: Taylor Wessing)", "url": "https://www.taylorwessing.com/", "date": "2025-2026 analyses"},
+    {"id": 5, "title": "Independent reporting on delayed Article-6 guidance (example: Hyperight)", "url": "https://hyperight.com/", "date": "2026-02 (reporting on missed deadline)"}
+  ]
+}

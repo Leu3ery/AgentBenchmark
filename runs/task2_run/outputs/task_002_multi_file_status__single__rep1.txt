@@ -1,0 +1,25 @@
+I added the new "archived" status across the backend catalog, validation layer, and API serialization path.
+
+Files changed
+- backend/statuses.py
+  - Added "archived" to STATUSES.
+  - Added "archived": "Archived" to STATUS_LABELS.
+  - Included "archived" in TERMINAL_STATUSES.
+
+- validation/schema.py
+  - Added "archived" to ALLOWED_STATUS.
+
+Reasoning
+- The API serializer imports STATUS_LABELS from backend.statuses, so adding the label there ensures serialization produces the expected "status_label".
+- The validation set (ALLOWED_STATUS) and normalize_status already worked together; adding "archived" ensures validation and payload normalization accept the new status.
+- Terminal statuses updated so is_terminal_status("archived") returns True.
+
+Checks run
+- Inspected repository files (listing and reading relevant modules).
+- Ran tests:
+  - pytest -q (with PYTHONPATH=. to ensure local packages are importable)
+  - Output: 4 passed in 0.01s
+
+If you want, I can:
+- Put "archived" in a specific order in STATUSES if required (e.g., before/after a particular status).
+- Add documentation or a changelog entry.

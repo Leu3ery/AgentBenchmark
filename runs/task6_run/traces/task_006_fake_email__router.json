@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-15T14:22:42+00:00",
+    "agent_id": "task_006_fake_email-router",
+    "event_type": "agent_start",
+    "message": "Agent task_006_fake_email-router started",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-03-15T14:22:42+00:00",
+    "agent_id": "task_006_fake_email-router",
+    "event_type": "llm_start",
+    "message": null,
+    "payload": {
+      "prompt_preview": "Return only the structured router decision.",
+      "input_items_count": 1
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:47+00:00",
+    "agent_id": "task_006_fake_email-router",
+    "event_type": "llm_end",
+    "message": null,
+    "payload": {
+      "response_id": "resp_0da57477f12332430069b6c0b35c7c819195c82a9702ad267d",
+      "usage": {
+        "input_tokens": 279,
+        "output_tokens": 234,
+        "total_tokens": 513
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:47+00:00",
+    "agent_id": "task_006_fake_email-router",
+    "event_type": "agent_end",
+    "message": "Agent task_006_fake_email-router completed",
+    "payload": {
+      "output_preview": "{\"selected_route\": \"workflow\", \"reason\": \"This task requires multi-step interaction with workspace artifacts (review inbox, consult local policy/FAQ, draft replies saved via the reply tool) rather than a single QA response \\u2014 the workflow route best supports those actions.\", \"confidence\": 0.92}"
+    }
+  }
+]

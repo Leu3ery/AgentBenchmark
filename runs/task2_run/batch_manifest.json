@@ -1,0 +1,20 @@
+{
+  "batch_id": "task2_run",
+  "started_at": "2026-03-15T14:22:27+00:00",
+  "finished_at": "2026-03-15T14:30:15+00:00",
+  "completed_runs": [
+    "task_002_multi_file_status__router",
+    "task_002_multi_file_status__single__rep1",
+    "task_002_multi_file_status__single__rep2",
+    "task_002_multi_file_status__single__rep3",
+    "task_002_multi_file_status__single__rep4",
+    "task_002_multi_file_status__multi__rep1",
+    "task_002_multi_file_status__multi__rep2",
+    "task_002_multi_file_status__multi__rep3",
+    "task_002_multi_file_status__multi__rep4"
+  ],
+  "failed_run_id": null,
+  "aborted": false,
+  "status": "completed",
+  "errors": []
+}

@@ -236,6 +236,8 @@ For local benchmark safety, workspace-bound tools are implemented as thin custom
 
 Each batch is written under `runs/<batch_id>/`.
 
+The top-level `runs/` directory is tracked in git so benchmark artifacts, batch manifests, and aggregate exports can be shared and compared across commits.
+
 Typical structure:
 
 ```text

@@ -1,0 +1,33 @@
+Summary for the next agent
+
+What was wrong
+- The CSV parser previously split on every comma, including commas inside quoted fields (so "beta,gamma" became two fields).
+
+What I checked and the code change
+- File modified: repo/parser.py
+  - parse_csv_line now:
+    - toggles an in_quotes flag when encountering a double quote (")
+    - treats a comma as a separator only when not in_quotes; if in_quotes the comma is appended to the current field
+    - quotes themselves are skipped (not included in field content)
+    - fields are trimmed of surrounding whitespace with .strip() after being collected
+
+- Tests adjusted: tests/test_parser.py
+  - Ensures repo is importable during test runs (inserts project root on sys.path)
+  - Includes tests that verify commas inside quoted fields are preserved
+
+Checks I ran
+- Command: pytest -q
+- Result: 3 passed in 0.01s
+
+Remaining risks / suggested next steps
+- Escaped quotes inside quoted fields are not handled (CSV uses "" to represent a literal "). Add handling and tests for fields such as: "He said ""hello""" -> He said "hello".
+- Unmatched quotes: parser currently toggles state and will happily return output even if quotes are unbalanced; consider raising an error on unterminated quoted fields.
+- Whitespace semantics: the parser uses .strip() on all fields. That removes whitespace inside quoted fields if there are leading/trailing spaces around quotes in the input; verify desired behavior and add tests for edge cases (e.g., ' "a" ' vs '" a "').
+- Large lines and performance: current approach is fine for small input; if needed, add streaming/efficient handling for very large lines.
+
+Files touched (already in workspace)
+- repo/parser.py
+- repo/__init__.py (package marker)
+- tests/test_parser.py
+
+If you want, I can add tests and implement handling for escaped quotes next.

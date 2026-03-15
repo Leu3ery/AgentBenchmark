@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-15T15:00:09+00:00",
+    "agent_id": "task_001_bugfix_csv-router",
+    "event_type": "agent_start",
+    "message": "Agent task_001_bugfix_csv-router started",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-03-15T15:00:09+00:00",
+    "agent_id": "task_001_bugfix_csv-router",
+    "event_type": "llm_start",
+    "message": null,
+    "payload": {
+      "prompt_preview": "Return only the structured router decision.",
+      "input_items_count": 1
+    }
+  },
+  {
+    "timestamp": "2026-03-15T15:00:14+00:00",
+    "agent_id": "task_001_bugfix_csv-router",
+    "event_type": "llm_end",
+    "message": null,
+    "payload": {
+      "response_id": "resp_0cd6f9fedfab702e0069b6c9799cd48190a8f6a937d8b1838a",
+      "usage": {
+        "input_tokens": 241,
+        "output_tokens": 311,
+        "total_tokens": 552
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-15T15:00:14+00:00",
+    "agent_id": "task_001_bugfix_csv-router",
+    "event_type": "agent_end",
+    "message": "Agent task_001_bugfix_csv-router completed",
+    "payload": {
+      "output_preview": "{\"selected_route\": \"single\", \"reason\": \"The bug is localized to the CSV parsing routine (incorrect splitting on commas inside quoted fields) and can be fixed with a small, targeted change to the parser state machine plus a couple of public tests. This does not require coordinating multiple agents or staged work, so a single implementer can make the change, run tests, and update public tests as needed.\", \"confidence\": 0.9}"
+    }
+  }
+]

@@ -1,0 +1,51 @@
+Summary of review and next steps for the live-research agent
+
+Status of previous agent output
+- What it did: created a research plan saved at workspaces/task_005_web_research/ai_act_research_plan.md and offered two next-step options.
+- What it did not do: did not answer the three task questions (1–3), did not fetch or cite live sources, and therefore did not meet the requirement to use multiple independent sources or provide dated source notes.
+
+Required next action (pick now): Run live research now.
+
+Concrete instructions for the next agent (concise checklist)
+1. Run live web research immediately (use the functions tools). Prefer parallel fetching where possible.
+2. Required primary/official sources to fetch (at minimum):
+   - The consolidated EU AI Act text on EUR-Lex (showing final Article/Annex numbers) — include access date.
+   - European Commission AI Act page(s) and any Commission press releases or Q&A about implementation/enforcement — include access date.
+   - Any Commission delegated or implementing acts relevant to enforcement milestones (e.g., classification rules, conformity procedures, obligations for certain systems) — include access dates.
+   - Communications from the EU AI Office / new EU authorities or registries (if live) — include access date.
+   - National regulator announcements for major Member States (e.g., Germany BSI, France ANSSI/CNIL, others) about enforcement or market surveillance — include access dates.
+   - EDPS / EDPB guidance where relevant (privacy obligations overlapping with AI Act) — include access dates.
+3. Required independent secondary sources (at least two different reputable outlets):
+   - One major EU/tech policy news outlet (e.g., Politico EU, Reuters, Financial Times) reporting on enforcement milestones — include publication dates.
+   - One legal/industry briefing from a major law firm, or think tank summary (e.g., DLA Piper, Bird & Bird, Centre for Data Innovation) — include publication dates.
+4. Deliverables to save into the workspace and return:
+   - Final concise answer that directly responds to:
+     1) What is the most recent enforcement milestone?
+     2) Which obligations apply next?
+     3) What uncertainty should a product team keep in mind?
+   - For each factual claim, include a short source note: URL and access/publication date.
+   - Explicitly call out uncertainty/timing ambiguities (dates, national transposition, scope definitions, delegated acts still pending).
+   - Save a structured artifact (e.g., JSON or markdown) listing sources, key quotes, and the timeline; and include its workspace path.
+5. Methodology constraints:
+   - Use multiple independent sources (primary where possible).
+   - Prefer primary/official sources for milestones and legal obligations; use secondary sources to corroborate and capture reporting of enforcement actions.
+   - Where sources conflict or timing is ambiguous, state that explicitly and cite the conflicting sources with dates.
+6. Suggested exact fetch targets / search queries (to ensure coverage):
+   - EUR-Lex: “Regulation (EU) 2024/???? AI Act consolidated text” (or search for “Artificial Intelligence Act EUR-Lex”).
+   - European Commission: “AI Act implementation”, “AI Act enforcement timeline”, “EU AI Office”.
+   - Commission delegated/implementing acts: search the Commission website and EUR-Lex for “delegated act AI Act” and “implementing act AI Act”.
+   - National regulators: “[Country] AI Act enforcement” (e.g., “Germany AI Act enforcement BSI”, “France AI Act CNIL”).
+   - News: “European AI Act enforcement milestone”, “AI Act start date enforcement [month year]”.
+7. Use the existing plan file to avoid duplication:
+   - Path: workspaces/task_005_web_research/ai_act_research_plan.md
+   - Incorporate or update that file with live sources and dates.
+
+Formatting and content requirements for final answer
+- Be concise but complete for the three numbered questions.
+- Provide source notes with URLs and dates (access or publication date).
+- Add an explicit section titled “Uncertainties / Timing ambiguities” listing what remains unclear and why, with citations that demonstrate the ambiguity.
+- Save the structured artifact (sources + short timeline + recommended product-team checklist) and include its path in the response.
+
+Priority: accuracy > brevity. Do not fabricate dates or enforcement decisions if sources are not available; instead state the absence/unclarity and cite sources.
+
+That is all—please run live research now and produce the requested final answer and saved artifact.

@@ -1,0 +1,20 @@
+{
+  "batch_id": "task6_run",
+  "started_at": "2026-03-15T14:22:42+00:00",
+  "finished_at": "2026-03-15T14:28:52+00:00",
+  "completed_runs": [
+    "task_006_fake_email__router",
+    "task_006_fake_email__single__rep1",
+    "task_006_fake_email__single__rep2",
+    "task_006_fake_email__single__rep3",
+    "task_006_fake_email__single__rep4",
+    "task_006_fake_email__multi__rep1",
+    "task_006_fake_email__multi__rep2",
+    "task_006_fake_email__multi__rep3",
+    "task_006_fake_email__multi__rep4"
+  ],
+  "failed_run_id": null,
+  "aborted": false,
+  "status": "completed",
+  "errors": []
+}

@@ -1,0 +1,29 @@
+Summary
+- Bug: The CSV parser split fields on every comma, even when that comma was inside a quoted field. It also didn't handle escaped quotes (double double-quotes) inside quoted fields. Additionally, tests initially failed to import the repo package in the test environment.
+- Fix: Updated the parser to:
+  - Only split on commas when not inside quotes.
+  - Handle escaped quotes (two double-quotes inside a quoted field => literal quote).
+- Tests: Added a small test for escaped quotes and ensured tests can import the repo package by adjusting sys.path. Also added a package marker file (repo/__init__.py).
+- Checks run: Executed pytest; all tests pass.
+
+What I changed (files)
+- repo/parser.py
+  - Replaced the simple char loop with an index-based loop that:
+    - Toggles in_quotes on encountering a quote.
+    - If in_quotes and the next char is a quote, treats it as an escaped quote and appends a single quote to the current field.
+    - Only splits on commas when not in_quotes.
+  - Preserved the previous behavior of trimming whitespace around fields after parsing.
+
+- repo/__init__.py
+  - Added a package marker so tests can import repo as a package.
+
+- tests/test_parser.py
+  - Added a small sys.path tweak so tests can import the repo package in this workspace/test runner environment.
+  - Added test_escaped_quote_inside_quoted_field to assert that two consecutive double-quotes inside a quoted field are parsed as a single literal quote.
+
+Commands and results
+- Ran: pytest -q
+- Result: 4 passed in 0.01s
+
+Notes
+- The parser remains intentionally small and focused; it now handles commas inside quoted fields and basic escaped quotes per common CSV conventions. If you need full CSV support for more edge cases (multiline fields, other escape rules, different quoting conventions), consider using Python's built-in csv module.

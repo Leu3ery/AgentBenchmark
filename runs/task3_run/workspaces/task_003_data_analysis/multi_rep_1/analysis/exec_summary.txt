@@ -1,0 +1,13 @@
+Top 3 categories by absolute revenue growth (Feb 2026 vs Jan 2026):
+1. growth — +130 (Jan 90 → Feb 220)
+2. support — +95 (Jan 120 → Feb 215)
+3. analytics — +80 (Jan 100 → Feb 180)
+
+Notable slower/negative trends:
+- platform declined by 5 (Jan 210 → Feb 205).
+- infra and security had modest gains (+30 each); success grew only +25.
+
+Executive summary and recommended actions:
+- The largest absolute gains came from growth, support, and analytics. Prioritize understanding the drivers behind these gains to determine scalability and allocate resources to sustain momentum.
+- Investigate the platform decline (-5) promptly to rule out churn, fulfillment, or reporting issues.
+- Consider targeted initiatives (marketing, product improvements, promotions) for infra, security, and success to convert modest growth into stronger revenue contribution.

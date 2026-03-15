@@ -1,0 +1,1 @@
+"""API serializer fixture package."""

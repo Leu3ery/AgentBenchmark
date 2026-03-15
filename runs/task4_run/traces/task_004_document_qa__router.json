@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-15T14:22:38+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "agent_start",
+    "message": "Agent task_004_document_qa-router started",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-03-15T14:22:38+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "llm_start",
+    "message": null,
+    "payload": {
+      "prompt_preview": "Return only the structured router decision.",
+      "input_items_count": 1
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:44+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "llm_end",
+    "message": null,
+    "payload": {
+      "response_id": "resp_0ca6d88d0df6ce020069b6c0aeaccc81939f43bbf4d4247b4c",
+      "usage": {
+        "input_tokens": 301,
+        "output_tokens": 337,
+        "total_tokens": 638
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:44+00:00",
+    "agent_id": "task_004_document_qa-router",
+    "event_type": "agent_end",
+    "message": "Agent task_004_document_qa-router completed",
+    "payload": {
+      "output_preview": "{\"selected_route\": \"docs_qa\", \"reason\": \"The task requires answering multiple targeted questions by synthesizing information across several local documents (multi-document QA), so the document-focused QA route is most appropriate.\", \"confidence\": 0.9}"
+    }
+  }
+]

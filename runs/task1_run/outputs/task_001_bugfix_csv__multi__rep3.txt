@@ -1,0 +1,28 @@
+What I ran
+- pytest -q
+- Result: 3 passed in 0.01s
+
+Bug summary
+- Original problem: the CSV parser split on every comma, including commas inside quoted fields (e.g. "beta,gamma"), which caused quoted fields that contain commas to be split incorrectly.
+- The fix: track whether we're inside quotes (in_quotes) and only treat a comma as a field separator when not in a quoted field. Quotes are skipped when building the field value.
+
+Code change (files touched)
+- repo/parser.py
+  - Added/used an in_quotes flag and only split on commas when not in quotes:
+    - if char == "," and not in_quotes: ...
+  - Quotes are toggled (in_quotes = not in_quotes) and not included in the output.
+- repo/__init__.py
+  - Added a minimal package initializer so repo can be imported by tests.
+- tests/test_parser.py
+  - Ensures the repo package is importable by adjusting sys.path (so tests run in the current workspace setup).
+
+Checks I ran
+- Executed the test suite with pytest -q; all tests passed:
+  - 3 passed in 0.01s
+
+Remaining risk / limitations
+- The parser still does not handle escaped quotes inside quoted fields (e.g., fields containing double quotes encoded as ""), which is part of RFC 4180. If inputs include escaped quotes, the parser may mis-handle them.
+- The parser is intentionally minimal: it strips surrounding quotes and trims whitespace; it does not handle multiline quoted fields or full CSV edge cases.
+
+Next steps (optional)
+- If needed, implement proper handling for escaped quotes ("" -> ") and multiline quoted fields to fully conform to RFC 4180.

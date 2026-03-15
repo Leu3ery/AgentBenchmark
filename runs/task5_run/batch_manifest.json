@@ -1,0 +1,20 @@
+{
+  "batch_id": "task5_run",
+  "started_at": "2026-03-15T14:22:40+00:00",
+  "finished_at": "2026-03-15T14:42:10+00:00",
+  "completed_runs": [
+    "task_005_web_research__router",
+    "task_005_web_research__single__rep1",
+    "task_005_web_research__single__rep2",
+    "task_005_web_research__single__rep3",
+    "task_005_web_research__single__rep4",
+    "task_005_web_research__multi__rep1",
+    "task_005_web_research__multi__rep2",
+    "task_005_web_research__multi__rep3",
+    "task_005_web_research__multi__rep4"
+  ],
+  "failed_run_id": null,
+  "aborted": false,
+  "status": "completed",
+  "errors": []
+}

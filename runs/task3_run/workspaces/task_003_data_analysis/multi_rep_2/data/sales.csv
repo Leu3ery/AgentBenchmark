@@ -1,0 +1,15 @@
+category,month,revenue,orders
+analytics,2026-01,100,18
+analytics,2026-02,180,29
+infra,2026-01,200,22
+infra,2026-02,230,24
+support,2026-01,120,16
+support,2026-02,215,27
+growth,2026-01,90,14
+growth,2026-02,220,31
+security,2026-01,160,17
+security,2026-02,190,19
+platform,2026-01,210,26
+platform,2026-02,205,24
+success,2026-01,140,20
+success,2026-02,165,22

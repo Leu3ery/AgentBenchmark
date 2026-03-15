@@ -1,0 +1,3 @@
+1. growth: growth=130.0 (Jan=90.0, Feb=220.0)
+2. support: growth=95.0 (Jan=120.0, Feb=215.0)
+3. analytics: growth=80.0 (Jan=100.0, Feb=180.0)

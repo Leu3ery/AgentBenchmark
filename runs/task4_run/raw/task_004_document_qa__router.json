@@ -1,0 +1,44 @@
+{
+  "run_id": "task_004_document_qa__router",
+  "batch_id": "task4_run",
+  "task_id": "task_004_document_qa",
+  "strategy": "router",
+  "model": "gpt-5-mini",
+  "started_at": "2026-03-15T14:22:38+00:00",
+  "finished_at": "2026-03-15T14:22:44+00:00",
+  "latency_sec": 6.807,
+  "prompt_tokens": 301,
+  "completion_tokens": 337,
+  "total_tokens": 638,
+  "estimated_cost": 0.000749,
+  "status": "completed",
+  "error_type": null,
+  "error_message": null,
+  "trace_file": "traces/task_004_document_qa__router.json",
+  "prompt_checksum": "233773842036bd223d0034c1ac85259a00daef5ad0ea851fe24d53b7f9910d9c",
+  "input_checksum": "76af59c2eb773104d460f148312d5d42adedd1cb007685b3f13e5fd4ba3086a0",
+  "task_config_checksum": "af5c22547b98c66deec0d6cdb53d2298407d5227a755cd4d62edc0cd4859ddba",
+  "timeout_sec": 1800,
+  "nondeterministic": false,
+  "sdk_versions": {
+    "openai": "2.28.0",
+    "openai-agents": "0.12.2",
+    "pydantic": "2.12.5"
+  },
+  "temperature": 0.0,
+  "route_candidates": [
+    "single",
+    "multi",
+    "docs_qa"
+  ],
+  "selected_route": "docs_qa",
+  "route_reason": "The task requires answering multiple targeted questions by synthesizing information across several local documents (multi-document QA), so the document-focused QA route is most appropriate.",
+  "route_confidence": 0.9,
+  "final_output_text": "{\n  \"selected_route\": \"docs_qa\",\n  \"reason\": \"The task requires answering multiple targeted questions by synthesizing information across several local documents (multi-document QA), so the document-focused QA route is most appropriate.\",\n  \"confidence\": 0.9\n}",
+  "manual_eval": {
+    "filled_by_user": true,
+    "score_overall": 9.5,
+    "route_was_good_choice": true,
+    "score_notes": "Correct routing choice: this is a classic multi-document QA task requiring concise synthesis grounded in local documents."
+  }
+}

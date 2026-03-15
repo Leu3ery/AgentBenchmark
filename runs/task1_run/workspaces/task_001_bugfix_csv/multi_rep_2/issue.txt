@@ -1,0 +1,13 @@
+Title: CSV parser splits inside quoted values
+
+Observed behavior:
+- Input like `alpha,"beta,gamma",delta` gets split into four fields instead of three.
+- This breaks downstream import jobs for exported CRM data.
+
+Expected behavior:
+- Commas inside a quoted field should stay inside that field.
+- Existing behavior for simple unquoted CSV lines should not regress.
+
+Notes:
+- Keep the fix small and easy to review.
+- Public tests can be updated if needed.

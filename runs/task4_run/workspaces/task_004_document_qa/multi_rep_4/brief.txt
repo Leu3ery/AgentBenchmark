@@ -1,0 +1,12 @@
+Title: Internal knowledge synthesis request
+
+You are helping an internal operations lead answer a short question set from the company knowledge base.
+
+Important constraints:
+- use only the local documents in this workspace
+- do not invent missing details
+- if the answer depends on more than one document, combine them into one clear statement
+
+Expected response style:
+- numbered answers
+- short source note after each answer

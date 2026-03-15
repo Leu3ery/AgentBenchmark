@@ -1,0 +1,45 @@
+{
+  "run_id": "task_006_fake_email__router",
+  "batch_id": "task6_run",
+  "task_id": "task_006_fake_email",
+  "strategy": "router",
+  "model": "gpt-5-mini",
+  "started_at": "2026-03-15T14:22:42+00:00",
+  "finished_at": "2026-03-15T14:22:47+00:00",
+  "latency_sec": 4.67,
+  "prompt_tokens": 279,
+  "completion_tokens": 234,
+  "total_tokens": 513,
+  "estimated_cost": 0.000538,
+  "status": "completed",
+  "error_type": null,
+  "error_message": null,
+  "trace_file": "traces/task_006_fake_email__router.json",
+  "prompt_checksum": "c6ba538f2d24660e6a7f236eaacebf72a9ef5846dc4b9de3445540db954ed315",
+  "input_checksum": "8fea939e4c67adadf8e2ae52b9db4504b07a13becfd2adead3321522199ba890",
+  "task_config_checksum": "99cae86c53fe7b8054df3f818ce06f5aeda9ee83d69be4523a475bfe94c1f3bd",
+  "timeout_sec": 1800,
+  "nondeterministic": false,
+  "sdk_versions": {
+    "openai": "2.28.0",
+    "openai-agents": "0.12.2",
+    "pydantic": "2.12.5"
+  },
+  "temperature": 0.0,
+  "route_candidates": [
+    "single",
+    "multi",
+    "workflow",
+    "docs_qa"
+  ],
+  "selected_route": "workflow",
+  "route_reason": "This task requires multi-step interaction with workspace artifacts (review inbox, consult local policy/FAQ, draft replies saved via the reply tool) rather than a single QA response — the workflow route best supports those actions.",
+  "route_confidence": 0.92,
+  "final_output_text": "{\n  \"selected_route\": \"workflow\",\n  \"reason\": \"This task requires multi-step interaction with workspace artifacts (review inbox, consult local policy/FAQ, draft replies saved via the reply tool) rather than a single QA response — the workflow route best supports those actions.\",\n  \"confidence\": 0.92\n}",
+  "manual_eval": {
+    "filled_by_user": true,
+    "score_overall": 9.6,
+    "route_was_good_choice": true,
+    "score_notes": "Correct routing choice: this task is a small workflow with inbox triage, policy lookup, and artifact-writing rather than plain QA."
+  }
+}

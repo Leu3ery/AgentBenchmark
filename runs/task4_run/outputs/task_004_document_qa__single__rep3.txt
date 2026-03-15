@@ -1,0 +1,7 @@
+1. Reliability Engineering owns the incident review process. (Source: docs/operations.md; docs/incident_roles.md)
+
+2. Sev-1 incidents have a target first-response time of 15 minutes. (Source: docs/operations.md)
+
+3. The quarterly KPI tied to customer retention is "improve customer retention by 4 points" (owned jointly by Customer Success and Product Growth). (Source: docs/quarterly_plan.md)
+
+4. The Customer Communications function coordinates external customer updates (and status page messaging) during a Sev-1 incident; they work with Support Leadership on customer-facing updates. (Source: docs/incident_roles.md; docs/team_directory.md)

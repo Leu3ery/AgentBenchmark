@@ -1,0 +1,11 @@
+1) Reliability engineering team.
+Source: docs/operations.md; corroborated by docs/incident_roles.md.
+
+2) 15 minutes (first response target for Sev-1).
+Source: docs/operations.md.
+
+3) "Improve customer retention by 4 points" — the customer retention KPI.
+Source: docs/quarterly_plan.md.
+
+4) Customer communications function (coordinates external customer updates; reports into customer operations).
+Source: docs/incident_roles.md; docs/team_directory.md.

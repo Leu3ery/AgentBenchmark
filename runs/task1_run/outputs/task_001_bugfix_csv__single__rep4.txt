@@ -1,0 +1,26 @@
+Summary of what I changed and why
+- Bug: parse_csv_line split on every comma, even commas inside quoted fields. That caused fields like '"beta,gamma"' to be split into two fields.
+- Fix: only treat commas as separators when not inside an open quoted field (i.e., when in_quotes is False).
+- Files changed:
+  - repo/parser.py — fixed the comma-splitting logic so commas inside quotes are preserved.
+  - repo/__init__.py — added a small package init so repo can be imported by tests.
+  - tests/test_parser.py — made tests runnable in the workspace by adding the project root to sys.path (this is a small test harness adjustment so pytest can import repo).
+
+Code change (targeted)
+- Before (logic that split on comma regardless of quotes):
+  - The parser checked if char == "," and always split, without checking whether we were inside quotes.
+- After (targeted fix in repo/parser.py):
+  - Now it only treats a comma as a separator when not inside a quoted field:
+    if char == "," and not in_quotes:
+        parts.append("".join(current).strip())
+        current = []
+        continue
+
+What I ran to verify
+- Ran the test suite:
+  - pytest -q
+  - All tests passed: 3 passed in 0.01s
+
+Notes
+- The fix is minimal and focused on the CSV splitting behavior. It toggles in_quotes on each quote and only splits on commas when not inside quotes.
+- I added repo/__init__.py so the module is importable, and adjusted tests/test_parser.py to ensure the tests can import the local package from the workspace. These test-side changes are small and only to ensure the test harness can run in this environment.

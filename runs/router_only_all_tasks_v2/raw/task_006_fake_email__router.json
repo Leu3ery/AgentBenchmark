@@ -1,0 +1,43 @@
+{
+  "run_id": "task_006_fake_email__router",
+  "batch_id": "router_only_all_tasks_v2",
+  "task_id": "task_006_fake_email",
+  "strategy": "router",
+  "model": "gpt-5-mini",
+  "started_at": "2026-03-15T15:00:34+00:00",
+  "finished_at": "2026-03-15T15:00:40+00:00",
+  "latency_sec": 6.115,
+  "prompt_tokens": 273,
+  "completion_tokens": 373,
+  "total_tokens": 646,
+  "estimated_cost": 0.000814,
+  "status": "completed",
+  "error_type": null,
+  "error_message": null,
+  "trace_file": "traces/task_006_fake_email__router.json",
+  "prompt_checksum": "c6ba538f2d24660e6a7f236eaacebf72a9ef5846dc4b9de3445540db954ed315",
+  "input_checksum": "8fea939e4c67adadf8e2ae52b9db4504b07a13becfd2adead3321522199ba890",
+  "task_config_checksum": "6899cfa998159f7eab88cea7158d48fa0468c40f26a0ea398d3a2779481f8c45",
+  "timeout_sec": 1800,
+  "nondeterministic": false,
+  "sdk_versions": {
+    "openai": "2.28.0",
+    "openai-agents": "0.12.2",
+    "pydantic": "2.12.5"
+  },
+  "temperature": 0.0,
+  "route_candidates": [
+    "single",
+    "multi"
+  ],
+  "selected_route": "multi",
+  "route_reason": "The task requires reviewing a fake inbox and drafting replies for any messages that need responses; multiple emails may require distinct drafts and a summary of replied/skipped items, so the multi route best supports handling several messages and creating multiple reply artifacts.",
+  "route_confidence": 0.9,
+  "final_output_text": "{\n  \"selected_route\": \"multi\",\n  \"reason\": \"The task requires reviewing a fake inbox and drafting replies for any messages that need responses; multiple emails may require distinct drafts and a summary of replied/skipped items, so the multi route best supports handling several messages and creating multiple reply artifacts.\",\n  \"confidence\": 0.9\n}",
+  "manual_eval": {
+    "filled_by_user": false,
+    "score_overall": null,
+    "route_was_good_choice": null,
+    "score_notes": null
+  }
+}

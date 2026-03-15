@@ -1,0 +1,16 @@
+I reviewed the inbox and replied where appropriate, following the local policy and FAQ.
+
+Replied to:
+- email_001 (alex@example.com, "Need confirmation on the workshop date")
+  - Reply: Confirmed the workshop is still planned for next Thursday at 14:00 CET and offered to send a calendar invite or prep materials.
+  - Draft saved to workspace: .benchmark_artifacts/replies/email_001.json
+
+- email_003 (maria@example.com, "Need the onboarding checklist")
+  - Reply: Pointed to the onboarding checklist location (Getting Started > Pilot Setup) and provided the docs portal URL (https://docs.example.com/pilot-setup). Offered to send the checklist directly or walk through steps.
+  - Draft saved to workspace: .benchmark_artifacts/replies/email_003.json
+
+Intentionally skipped (no reply needed per policy):
+- email_002 (billing@example.com, "Invoice received") — confirmation only, no response necessary.
+- email_004 (sam@example.com, "Thanks for the quick help") — thank-you note stating no action needed.
+
+If you want any changes to the drafted replies (tone, added details, or sending the checklist directly), tell me which message to update.

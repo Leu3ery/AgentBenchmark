@@ -1,0 +1,32 @@
+What I re-ran
+- Ran the public test suite: pytest -q -> 3 passed in 0.01s.
+
+Bug summary
+- parse_csv_line treated every comma as a separator even when inside double-quoted fields, so quoted fields that contain commas were being split incorrectly.
+
+Targeted code change
+- repo/parser.py
+  - Only split on commas when not inside quotes. The loop now tracks in_quotes and only treats a comma as a field separator if in_quotes is False. Quotation characters toggle in_quotes and are not included in output (same behavior as before).
+  - Key change (conceptual): if char == ',' and not in_quotes: split; otherwise include char.
+
+Test / packaging adjustments
+- repo/__init__.py added to make repo importable in tests.
+- tests/test_parser.py prepends project root to sys.path to ensure the repo package is found when pytest runs.
+
+Checks performed
+- Inspected repository files (repo/parser.py, repo/__init__.py, tests/test_parser.py).
+- Executed the test suite: pytest -q -> all tests passed (3 passed).
+
+Remaining risks / recommended follow-ups
+- The parser still does not support escaped double quotes inside quoted fields (CSV convention: "" -> "). If inputs may contain embedded quotes, add handling for double-double-quotes.
+- Current behavior strips surrounding whitespace and removes the quote characters entirely; if you need to preserve surrounding spaces or different quoting semantics, adjust accordingly.
+- This is a small, ad-hoc parser; for full CSV compliance (edge cases, different newline/escape rules), consider using Python's csv module.
+
+Files changed
+- repo/parser.py
+- repo/__init__.py
+- tests/test_parser.py
+
+If you want, I can:
+- Add support for escaped quotes inside quoted fields.
+- Tighten tests for edge cases (leading/trailing spaces, empty fields, quoted empty fields, embedded quotes).

@@ -1,0 +1,44 @@
+{
+  "run_id": "task_003_data_analysis__router",
+  "batch_id": "task3_run",
+  "task_id": "task_003_data_analysis",
+  "strategy": "router",
+  "model": "gpt-5-mini",
+  "started_at": "2026-03-15T14:22:34+00:00",
+  "finished_at": "2026-03-15T14:22:38+00:00",
+  "latency_sec": 3.835,
+  "prompt_tokens": 286,
+  "completion_tokens": 194,
+  "total_tokens": 480,
+  "estimated_cost": 0.00046,
+  "status": "completed",
+  "error_type": null,
+  "error_message": null,
+  "trace_file": "traces/task_003_data_analysis__router.json",
+  "prompt_checksum": "604ac7de76f0f59f8250aa8a79e67851b38e146b251be2f0c66109e4971dabf6",
+  "input_checksum": "f1d6843691fecaace69a8b7e29d3c574277383d7b627561fde016ec4be68f419",
+  "task_config_checksum": "669fdeb5217c3e8d7548545e9ed06ac764dae8fe75d738745a5eed1d99c10a20",
+  "timeout_sec": 1800,
+  "nondeterministic": false,
+  "sdk_versions": {
+    "openai": "2.28.0",
+    "openai-agents": "0.12.2",
+    "pydantic": "2.12.5"
+  },
+  "temperature": 0.0,
+  "route_candidates": [
+    "single",
+    "multi",
+    "data_analysis"
+  ],
+  "selected_route": "data_analysis",
+  "route_reason": "The task requires computing numerical revenue growth between two months and producing an executive summary—this aligns with the data_analysis route which can run calculations, generate summary text, and optionally save artifacts in the workspace.",
+  "route_confidence": 0.9,
+  "final_output_text": "{\n  \"selected_route\": \"data_analysis\",\n  \"reason\": \"The task requires computing numerical revenue growth between two months and producing an executive summary—this aligns with the data_analysis route which can run calculations, generate summary text, and optionally save artifacts in the workspace.\",\n  \"confidence\": 0.9\n}",
+  "manual_eval": {
+    "filled_by_user": true,
+    "score_overall": 9.4,
+    "route_was_good_choice": true,
+    "score_notes": "Correct routing choice: this task is genuinely data-analysis oriented and benefits from calculation plus a concise stakeholder summary."
+  }
+}

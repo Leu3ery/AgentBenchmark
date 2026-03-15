@@ -1,0 +1,7 @@
+1. Reliability Engineering team. Source: docs/operations.md; docs/incident_roles.md
+
+2. 15 minutes (first response). Source: docs/operations.md
+
+3. "Improve customer retention by 4 points" (quarterly KPI). Source: docs/quarterly_plan.md
+
+4. Customer Communications function (coordinates external customer updates and status page messaging). Source: docs/incident_roles.md; docs/team_directory.md

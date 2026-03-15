@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-15T14:22:40+00:00",
+    "agent_id": "task_005_web_research-router",
+    "event_type": "agent_start",
+    "message": "Agent task_005_web_research-router started",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-03-15T14:22:40+00:00",
+    "agent_id": "task_005_web_research-router",
+    "event_type": "llm_start",
+    "message": null,
+    "payload": {
+      "prompt_preview": "Return only the structured router decision.",
+      "input_items_count": 1
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:46+00:00",
+    "agent_id": "task_005_web_research-router",
+    "event_type": "llm_end",
+    "message": null,
+    "payload": {
+      "response_id": "resp_0788dbd7e4f883e40069b6c0b0d72481949cfa908a4392d67d",
+      "usage": {
+        "input_tokens": 307,
+        "output_tokens": 290,
+        "total_tokens": 597
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-15T14:22:46+00:00",
+    "agent_id": "task_005_web_research-router",
+    "event_type": "agent_end",
+    "message": "Agent task_005_web_research-router completed",
+    "payload": {
+      "output_preview": "{\"selected_route\": \"web_research\", \"reason\": \"Task explicitly requires live, multi-source internet research with preference for primary/official sources and time-stamped citations; the web_research route is designed for live web investigations and synthesizing multiple sources while noting uncertainty.\", \"confidence\": 0.9}"
+    }
+  }
+]

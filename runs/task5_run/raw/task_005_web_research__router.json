@@ -1,0 +1,46 @@
+{
+  "run_id": "task_005_web_research__router",
+  "batch_id": "task5_run",
+  "task_id": "task_005_web_research",
+  "strategy": "router",
+  "model": "gpt-5-mini",
+  "started_at": "2026-03-15T14:22:40+00:00",
+  "finished_at": "2026-03-15T14:22:46+00:00",
+  "latency_sec": 6.044,
+  "prompt_tokens": 307,
+  "completion_tokens": 290,
+  "total_tokens": 597,
+  "estimated_cost": 0.000657,
+  "status": "completed",
+  "error_type": null,
+  "error_message": null,
+  "trace_file": "traces/task_005_web_research__router.json",
+  "prompt_checksum": "fbd5620e62e08778042950feee57fd0415a6b9772f0fdbe070e625c460362f9c",
+  "input_checksum": "26f221e1003b26783f70ecf90d7e0d062cd071cbe1ef3fe1c3602f401d375063",
+  "task_config_checksum": "515677182306aec0e3e9b1f99647aea967ca1347043c73d94c7d4df4c4c84619",
+  "timeout_sec": 1800,
+  "nondeterministic": true,
+  "sdk_versions": {
+    "openai": "2.28.0",
+    "openai-agents": "0.12.2",
+    "pydantic": "2.12.5"
+  },
+  "temperature": 0.0,
+  "route_candidates": [
+    "single",
+    "multi",
+    "docs_qa",
+    "data_analysis",
+    "web_research"
+  ],
+  "selected_route": "web_research",
+  "route_reason": "Task explicitly requires live, multi-source internet research with preference for primary/official sources and time-stamped citations; the web_research route is designed for live web investigations and synthesizing multiple sources while noting uncertainty.",
+  "route_confidence": 0.9,
+  "final_output_text": "{\n  \"selected_route\": \"web_research\",\n  \"reason\": \"Task explicitly requires live, multi-source internet research with preference for primary/official sources and time-stamped citations; the web_research route is designed for live web investigations and synthesizing multiple sources while noting uncertainty.\",\n  \"confidence\": 0.9\n}",
+  "manual_eval": {
+    "filled_by_user": true,
+    "score_overall": 9.7,
+    "route_was_good_choice": true,
+    "score_notes": "Correct routing choice: the task explicitly required live multi-source web research with primary-source preference and dated source notes."
+  }
+}

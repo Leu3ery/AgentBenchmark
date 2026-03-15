@@ -1,0 +1,13 @@
+I reviewed policy.md and faq.md and inspected the saved reply drafts.
+
+Actions taken / status
+- Replied (drafts already saved and acceptable)
+  - email_001 (alex@example.com) — Confirmed workshop time. Draft is concise, answers directly, and follows FAQ guidance.
+  - email_003 (maria@example.com) — Shared onboarding checklist link and offered to send/help. Draft is concise and actionable.
+
+- Intentionally skipped (no reply needed per policy)
+  - email_002 (billing@example.com) — Payment confirmation; no action requested.
+  - email_004 (sam@example.com) — Thank-you note; explicitly states no action needed.
+
+Notes for next agent
+- Drafts look compliant with the local policy and FAQ; no edits required. If you want, I can (a) add subject lines, or (b) replace “[Your Name]” with the account owner’s name before sending.

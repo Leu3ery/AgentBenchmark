@@ -1,0 +1,33 @@
+Summary of what I changed and why
+
+Bug
+- The CSV parser (repo/parser.py) split on every comma irrespective of whether the comma was inside a quoted field, and it always stripped whitespace from fields — which can incorrectly remove intended spaces inside quoted fields.
+- Tests initially failed to import the repo package because repo/ lacked a package marker; pytest's import path handling also required ensuring the project root was on sys.path for reliable imports.
+
+Code changes (targeted)
+1. Fixed CSV parsing (repo/parser.py)
+   - Rewrote the parsing loop to:
+     - Track whether we are inside quotes (in_quotes).
+     - Treat commas inside quotes as part of the current field (not separators).
+     - Support escaped quotes ("" -> a single " inside a quoted field).
+     - Only strip whitespace from unquoted fields when a field is finalized.
+   - The implementation is intentionally small and focused only on the quoted-field / comma / escape handling.
+
+2. Made repo a package (repo/__init__.py)
+   - Added a minimal __init__.py so the package can be imported as repo.
+
+3. Adjusted public tests to be robust under pytest (tests/test_parser.py)
+   - Inserted the project root onto sys.path at the top of the test file so that importing repo.parser works even when pytest changes the working directory during collection.
+
+Files modified
+- repo/parser.py (parser logic fixed)
+- repo/__init__.py (new, package marker)
+- tests/test_parser.py (small sys.path insert to ensure imports work under pytest)
+
+Checks I ran
+- Ran the test suite: pytest -q
+  - Result: 3 passed in 0.01s
+
+Notes
+- The parser change focuses only on correctly handling quoted fields, commas inside quotes, and escaped quotes (""), and avoids broader CSV features (e.g., newlines inside quoted fields) since the original function scope was limited to single-line parsing.
+- I kept the test change minimal and deterministic (inserting project root onto sys.path) so tests reliably import the package under pytest.

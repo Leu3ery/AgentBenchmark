@@ -1,0 +1,30 @@
+Summary of what I changed and why
+
+Bug
+- The CSV parser split on every comma, even when the comma was inside quoted fields. That made inputs like 'alpha,"beta,gamma",delta' split into ["alpha", "\"beta", "gamma\"", "delta"] (or similar) instead of keeping "beta,gamma" as a single field.
+
+Code change
+- repo/parser.py
+  - Fixed the comma handling so the parser only splits on commas when not inside a quoted field.
+  - Implementation: when char == ',' we now only treat it as a separator if in_quotes is False.
+  - Kept the existing behavior of removing quote characters and stripping surrounding whitespace.
+- repo/__init__.py
+  - Added a small package marker so the repo directory is a Python package.
+- tests/test_parser.py
+  - Added a small sys.path adjustment at the top to ensure the repo package can be imported when running the tests from the workspace. (This is a test environment import fix; parser logic itself is unchanged by this.)
+
+Files changed
+- Modified: repo/parser.py
+- Added: repo/__init__.py
+- Modified (test helper): tests/test_parser.py
+
+Checks run
+- Ran the test suite: pytest tests/test_parser.py
+  - Result: 3 passed
+
+Why this is a targeted fix
+- The change in parser.py is minimal and directly addresses the incorrect splitting behavior by checking the quoting state before splitting on commas. No broader rewrites or feature changes were made.
+
+If you want, I can:
+- Add more tests for additional edge cases (e.g., escaped quotes) if those behaviors are needed.
+- Extend the parser to fully conform to RFC 4180 (handling quoted quotes, newlines in fields, etc.).

@@ -1,0 +1,11 @@
+Review summary:
+
+Replied (drafts saved and acceptable)
+- email_001 (alex@example.com): Draft confirms the workshop is planned for next Thursday at 14:00 CET and promises notification if it changes. Tone and length meet policy; direct answer first and a concrete next step are present. No changes needed.
+- email_003 (maria@example.com): Draft gives the docs portal path and URL and offers to send the checklist or schedule a walkthrough. Concise, direct, and matches the FAQ. No changes needed.
+
+Skipped (no reply needed)
+- email_002 (billing@example.com): Payment confirmation only — correctly skipped per policy.
+- email_004 (sam@example.com): Thank-you note with no action requested — correctly skipped per policy.
+
+No further replies required.

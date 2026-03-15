@@ -1,0 +1,14 @@
+Title: Add archived status across the stack
+
+Product requirement:
+- We now support an `archived` lifecycle state for records that should remain visible in history but no longer be editable.
+
+Current problem:
+- The backend status catalog does not include `archived`.
+- Validation still rejects `archived`.
+- API serializers do not know how to label `archived`.
+
+Expected outcome:
+- Existing statuses keep working.
+- `archived` is treated as a valid terminal state.
+- API output returns a human-readable label for `archived`.

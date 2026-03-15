@@ -1,0 +1,20 @@
+{
+  "batch_id": "task4_run",
+  "started_at": "2026-03-15T14:22:38+00:00",
+  "finished_at": "2026-03-15T14:26:24+00:00",
+  "completed_runs": [
+    "task_004_document_qa__router",
+    "task_004_document_qa__single__rep1",
+    "task_004_document_qa__single__rep2",
+    "task_004_document_qa__single__rep3",
+    "task_004_document_qa__single__rep4",
+    "task_004_document_qa__multi__rep1",
+    "task_004_document_qa__multi__rep2",
+    "task_004_document_qa__multi__rep3",
+    "task_004_document_qa__multi__rep4"
+  ],
+  "failed_run_id": null,
+  "aborted": false,
+  "status": "completed",
+  "errors": []
+}

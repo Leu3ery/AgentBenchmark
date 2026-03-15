@@ -1,0 +1,13 @@
+Saved an analysis artifact: analysis/top3_revenue_growth.csv
+
+Top 3 categories by absolute revenue growth (Feb 2026 vs Jan 2026)
+1. growth — +$130 (from $90 to $220)
+2. support — +$95 (from $120 to $215)
+3. analytics — +$80 (from $100 to $180)
+
+Executive summary (for stakeholder)
+- The growth category led all increases with a $130 absolute revenue gain month-over-month, followed by support (+$95) and analytics (+$80). These three categories should be prioritized for continued investment and capacity planning to sustain momentum.
+- Notable negative/slower trends: platform declined slightly (-$5), and infra and security delivered only modest absolute gains (+$30 each). Platform’s small drop and the relatively slow increases in infra/security/success (+$25) warrant rapid investigation to determine whether this is seasonal/noise or early signs of churn or product-market friction.
+- Recommended next steps: (1) Allocate additional sales/marketing and operational support to growth, support, and analytics to capitalize on strong demand; (2) run a quick root-cause analysis on platform (pricing, fulfillment, customer feedback) and review infra/security pipelines for potential blockers; (3) monitor these KPIs weekly to confirm whether trends persist.
+
+Artifact: analysis/top3_revenue_growth.csv (category, jan2026, feb2026, absolute_growth)

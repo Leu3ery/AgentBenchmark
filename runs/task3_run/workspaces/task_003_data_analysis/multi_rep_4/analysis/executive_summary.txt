@@ -1,0 +1,9 @@
+Top 3 categories by absolute revenue growth (Feb 2026 vs Jan 2026):
+1) growth: +130 (Jan 90 -> Feb 220)
+2) support: +95 (Jan 120 -> Feb 215)
+3) analytics: +80 (Jan 100 -> Feb 180)
+
+Executive summary (concise):
+- The "growth" category delivered the largest absolute revenue increase in February (+130), followed by "support" (+95) and "analytics" (+80). These three categories were the primary drivers of month-over-month gains and should be prioritized for capacity planning and scaling opportunities.
+- Notable slower/negative trends: "platform" declined slightly (-5, 210 -> 205). Several other categories showed modest gains only (infra +30, security +30, success +25), indicating areas that may benefit from targeted interventions (e.g., pricing, promotions, or product improvements).
+- Recommended next steps: investigate the drivers behind the "growth" surge (campaigns, product changes, or seasonality) to replicate success; address the platform decline and consider targeted support for lower-growth categories to broaden revenue momentum.

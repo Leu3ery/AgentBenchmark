@@ -1,0 +1,43 @@
+{
+  "run_id": "task_003_data_analysis__router",
+  "batch_id": "router_only_all_tasks_v2",
+  "task_id": "task_003_data_analysis",
+  "strategy": "router",
+  "model": "gpt-5-mini",
+  "started_at": "2026-03-15T15:00:19+00:00",
+  "finished_at": "2026-03-15T15:00:25+00:00",
+  "latency_sec": 5.767,
+  "prompt_tokens": 283,
+  "completion_tokens": 302,
+  "total_tokens": 585,
+  "estimated_cost": 0.000675,
+  "status": "completed",
+  "error_type": null,
+  "error_message": null,
+  "trace_file": "traces/task_003_data_analysis__router.json",
+  "prompt_checksum": "604ac7de76f0f59f8250aa8a79e67851b38e146b251be2f0c66109e4971dabf6",
+  "input_checksum": "f1d6843691fecaace69a8b7e29d3c574277383d7b627561fde016ec4be68f419",
+  "task_config_checksum": "be496a22bc3a1789b869bcbfffdfcd323b4ad1dcbc22c3ad88b18813a10181d2",
+  "timeout_sec": 1800,
+  "nondeterministic": false,
+  "sdk_versions": {
+    "openai": "2.28.0",
+    "openai-agents": "0.12.2",
+    "pydantic": "2.12.5"
+  },
+  "temperature": 0.0,
+  "route_candidates": [
+    "single",
+    "multi"
+  ],
+  "selected_route": "single",
+  "route_reason": "This is a straightforward, deterministic data-analysis task on a small dataset that can be completed in one pass (compute absolute revenue differences, rank top 3, and write a short summary). No complex multi-agent orchestration or iterative decomposition appears necessary.",
+  "route_confidence": 0.9,
+  "final_output_text": "{\n  \"selected_route\": \"single\",\n  \"reason\": \"This is a straightforward, deterministic data-analysis task on a small dataset that can be completed in one pass (compute absolute revenue differences, rank top 3, and write a short summary). No complex multi-agent orchestration or iterative decomposition appears necessary.\",\n  \"confidence\": 0.9\n}",
+  "manual_eval": {
+    "filled_by_user": false,
+    "score_overall": null,
+    "route_was_good_choice": null,
+    "score_notes": null
+  }
+}

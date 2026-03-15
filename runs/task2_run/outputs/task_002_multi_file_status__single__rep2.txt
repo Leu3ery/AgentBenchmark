@@ -1,0 +1,22 @@
+I added support for a new "archived" status across the backend catalog, validation layer, and confirmed the API serializer works with it.
+
+Files changed
+- backend/statuses.py
+  - Added "archived" to STATUSES.
+  - Added "archived": "Archived" to STATUS_LABELS.
+  - Included "archived" in TERMINAL_STATUSES.
+  - (Kept existing statuses intact.)
+- validation/schema.py
+  - Added "archived" to ALLOWED_STATUS.
+  - Left normalize_status and validate_payload intact (they already handle whitespace/lowercasing).
+
+Why this is sufficient
+- The API serializer (api/serializer.py) reads status labels from backend.statuses.STATUS_LABELS, so no change was needed there beyond ensuring the label exists.
+- normalize_status already strips and lowercases input, so validation payloads such as " Archived " become "archived" and validate_payload returns True once archived is added to ALLOWED_STATUS.
+
+Checks run
+- Ran the test suite:
+  - Command: PYTHONPATH=. pytest -q
+  - Result: 4 passed in 0.01s
+
+If you want, I can also update any documentation or add tests that explicitly exercise other code paths that treat terminal statuses (e.g., operations that block on terminal status).

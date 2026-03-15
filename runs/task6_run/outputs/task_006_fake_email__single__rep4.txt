@@ -1,0 +1,11 @@
+I reviewed the inbox and replied to messages that required answers, using the workspace policy and FAQ.
+
+Replied to:
+- email_001 (alex@example.com) — Confirmed the workshop is still planned for next Thursday at 14:00 CET and offered to send a calendar invite if needed. Reply saved to .benchmark_artifacts/replies/email_001.json.
+- email_003 (maria@example.com) — Sent the onboarding checklist location and docs portal URL (Getting Started > Pilot Setup, https://docs.example.com/pilot-setup) and offered to send a copy or point to sections. Reply saved to .benchmark_artifacts/replies/email_003.json.
+
+Skipped (no reply needed per policy):
+- email_002 (billing@example.com) — Payment confirmation only; no response required.
+- email_004 (sam@example.com) — Thank-you note with no requested action.
+
+All replies follow the local policy and FAQ, are concise, and are recorded as reply artifacts in the workspace.

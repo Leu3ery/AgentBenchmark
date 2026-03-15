@@ -1,0 +1,22 @@
+{
+  "title": "EU AI Act - Research snapshot",
+  "as_of": "2026-03-15",
+  "key_dates": {
+    "publication_official_journal": "2024-07-12",
+    "entry_into_force": "2024-08-01",
+    "prohibitions_apply": "2025-02-02",
+    "GPAI_and_governance_apply": "2025-08-02",
+    "general_application_most_provisions": "2026-08-02",
+    "high_risk_embedded_in_products": "2027-08-02"
+  },
+  "notable_actions": [
+    "Digital Omnibus proposal (EC) adopted 19 Nov 2025 proposing to adjust timeline for high-risk requirements",
+    "Commission guidance deadlines (e.g., practical implementation guidelines) had publication target by 2026-02-02; status: mixed/delayed as of Mar 2026"
+  ],
+  "primary_sources": [
+    {"id":"EC_AI_Act_page","url":"https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai","date":"accessed 2026-03-15"},
+    {"id":"EC_FAQ_AI_Act","url":"https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act","date":"accessed 2026-03-15"},
+    {"id":"EU_regulation_text","url":"https://eur-lex.europa.eu/eli/reg/2024/1689/oj","date":"publication 2024-07-12"}
+  ],
+  "notes":"This snapshot used multiple independent sources (European Commission pages, EUR-Lex, legal analysis and press). Timing for implementation of high-risk obligations remains subject to change (Digital Omnibus) and availability of harmonised standards; national enforcement capacity is still being built."
+}

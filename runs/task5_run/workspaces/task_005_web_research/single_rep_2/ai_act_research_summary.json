@@ -1,0 +1,31 @@
+{
+  "task_date":"2026-03-15",
+  "most_recent_enforcement_milestone":{
+    "milestone":"General-Purpose AI (GPAI) obligations and governance rules became applicable",
+    "effective_date":"2025-08-02",
+    "notes":"European Commission published final GPAI Code of Practice on 10 July 2025 to support these obligations.",
+    "sources":["turn3search12 (European Commission press release, 10 Jul 2025)","turn4view0 (EC FAQ on AI Act, updated 2026-03)"]
+  },
+  "next_obligations_upcoming":{
+    "milestone":"Full application of high-risk AI obligations (Annex III) including conformity assessment, technical documentation, risk management, human oversight, post-market monitoring, CE marking for stand-alone systems and registration in EU database",
+    "effective_date":"2026-08-02",
+    "sources":["turn4view0 (EC FAQ) ","turn1search2 (Regulation (EU) 2024/1689, Publications Office)"]
+  },
+  "key_uncertainties":[
+    "Delays in harmonised standards and notified body availability (Commission FAQ notes delay; standardisation ongoing)",
+    "Many Member States had not fully designated market surveillance/supervisory authorities by late 2025, creating uneven enforcement capacity",
+    "Potential legislative changes (Digital Omnibus proposal, Nov 19, 2025) could shift application dates or adjust requirements",
+    "Definitions and scope (GPAI threshold, 'systemic risk', who counts as 'provider' and extraterritorial reach) still require Commission guidance",
+    "Enforcement prioritisation: early enforcement likely focused on most egregious violations and in Member States with operational authorities"
+  ],
+  "sources_full_list":[
+    {"id":"turn4view0","title":"Navigating the AI Act | Shaping Europe’s digital future (European Commission FAQ)","date":"accessed 2026-03-15"},
+    {"id":"turn3search12","title":"European Commission press release - General-Purpose AI Code of Practice, 10 July 2025","date":"2025-07-10"},
+    {"id":"turn1search2","title":"Regulation (EU) 2024/1689 — Artificial Intelligence Act (Publications Office)","date":"published 2024-07-12"},
+    {"id":"turn0search4","title":"Major transparency consultation as industry divides | EU AI Risk","date":"2025-09-06"},
+    {"id":"turn0search8","title":"AI Act News - October 23, 2025 | EU AI Risk","date":"2025-10-23"},
+    {"id":"turn3search0","title":"General-Purpose AI Code of Practice now available | European Commission page","date":"2025-07-10"},
+    {"id":"turn5search2","title":"Guidelines on prohibited AI systems (AI Office) - secondary summary","date":"2025-02-04"},
+    {"id":"turn6search8","title":"Digital Omnibus on AI — All Proposed Amendments","date":"2025-11-19"}
+  ]
+}

@@ -1,0 +1,25 @@
+Summary of review and checks
+
+Files changed
+- backend/statuses.py
+  - Added "archived" to STATUSES
+  - Added "archived": "Archived" to STATUS_LABELS
+  - Added "archived" to TERMINAL_STATUSES
+- validation/schema.py
+  - Added "archived" to ALLOWED_STATUS
+
+Files inspected (no changes required)
+- api/serializer.py — uses STATUS_LABELS to produce status_label; works with the new mapping.
+- tests/test_status.py — contains tests validating the new status and serializer behavior.
+
+What I checked
+- Read the updated files to confirm the new "archived" status is present and consistently used:
+  - backend/statuses.py includes "archived" in STATUSES, STATUS_LABELS, and TERMINAL_STATUSES; helper functions is_valid_status and is_terminal_status use those structures.
+  - validation/schema.py includes "archived" in ALLOWED_STATUS and normalization/validation functions behave as expected.
+  - api/serializer.py references STATUS_LABELS for status_label generation; no change required.
+- Ran the test suite with PYTHONPATH set so the package imports work:
+  - Command: PYTHONPATH=$(pwd) pytest -q
+  - Result: 4 passed
+
+Conclusion
+- The addition of the "archived" status is implemented consistently across the backend catalog and validation layer, and the API serialization path already supports it via STATUS_LABELS. All tests pass.

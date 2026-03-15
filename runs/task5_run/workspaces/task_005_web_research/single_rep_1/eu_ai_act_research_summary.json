@@ -1,0 +1,17 @@
+{
+  "as_of":"2026-03-15",
+  "most_recent_enforcement_milestone":"General-purpose AI obligations and governance became applicable on 2 August 2025; Commission proposals (Digital Omnibus, 19 Nov 2025) and EDPB/EDPS joint opinion (10 Feb 2026) are recent developments that could affect timelines.",
+  "next_obligations":"High-risk AI system obligations (Annex III) scheduled to apply on 2 August 2026; obligations for AI embedded in harmonised products (Annex II) apply 2 August 2027.",
+  "main_uncertainties":[
+    "Delays in development/publication of harmonised technical standards by CEN/CENELEC (may make August 2026 compliance impractical)",
+    "Digital Omnibus legislative proposal (19 Nov 2025) could change application dates and procedural rules; not yet law",
+    "EDPB/EDPS joint opinion (10 Feb 2026) raises issues around data protection interplay",
+    "Variation in Member State designation/capacity of national competent authorities and notified bodies; interpretive guidance (e.g., Article 6 high-risk classification) was delayed"
+  ],
+  "sources":[
+    {"id":"turn1view0","label":"European Commission FAQ 'Navigating the AI Act'","date":"accessed 2026-03-15"},
+    {"id":"turn6search0","label":"EUR-Lex Regulation (EU) 2024/1689 (AI Act text)","date":"accessed 2026-03-15"},
+    {"id":"turn3search0","label":"EDPS press note on EDPB-EDPS Joint Opinion on Digital Omnibus","date":"11 Feb 2026"},
+    {"id":"turn5search0","label":"Cambridge/Tandfonline article on standards delays","date":"2025 (published) accessed 2026-03-15"}
+  ]
+}

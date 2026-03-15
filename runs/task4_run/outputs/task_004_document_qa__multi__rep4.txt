@@ -1,0 +1,7 @@
+1. Reliability engineering — Supported. Source: docs/operations.md; docs/incident_roles.md
+
+2. 15 minutes — Supported. Source: docs/operations.md
+
+3. "Improve customer retention by 4 points" — Supported (KPI owned by customer success & product growth; tracked company-level). Source: docs/quarterly_plan.md
+
+4. Customer communications — Supported. Source: docs/incident_roles.md; docs/team_directory.md
