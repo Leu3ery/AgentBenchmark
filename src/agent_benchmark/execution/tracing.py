@@ -57,10 +57,10 @@ class TraceCollector(RunHooks):
             )
         )
 
-    def on_agent_start(self, context, agent) -> None:  # type: ignore[override]
+    async def on_agent_start(self, context, agent) -> None:  # type: ignore[override]
         self._append_step(agent.name, "agent_start", message=f"Agent {agent.name} started")
 
-    def on_agent_end(self, context, agent, output) -> None:  # type: ignore[override]
+    async def on_agent_end(self, context, agent, output) -> None:  # type: ignore[override]
         self._append_step(
             agent.name,
             "agent_end",
@@ -68,7 +68,7 @@ class TraceCollector(RunHooks):
             output_preview=_serialize(output, max_chars=1_000),
         )
 
-    def on_handoff(self, context, from_agent, to_agent) -> None:  # type: ignore[override]
+    async def on_handoff(self, context, from_agent, to_agent) -> None:  # type: ignore[override]
         self._append_step(
             from_agent.name,
             "handoff",
@@ -76,7 +76,7 @@ class TraceCollector(RunHooks):
             to_agent=to_agent.name,
         )
 
-    def on_llm_start(self, context, agent, system_prompt, input_items) -> None:  # type: ignore[override]
+    async def on_llm_start(self, context, agent, system_prompt, input_items) -> None:  # type: ignore[override]
         self._append_step(
             agent.name,
             "llm_start",
@@ -84,7 +84,7 @@ class TraceCollector(RunHooks):
             input_items_count=len(input_items),
         )
 
-    def on_llm_end(self, context, agent, response) -> None:  # type: ignore[override]
+    async def on_llm_end(self, context, agent, response) -> None:  # type: ignore[override]
         usage = getattr(response, "usage", None)
         if usage is not None:
             self.prompt_tokens += getattr(usage, "input_tokens", 0)
@@ -104,7 +104,7 @@ class TraceCollector(RunHooks):
             },
         )
 
-    def on_tool_start(self, context, agent, tool) -> None:  # type: ignore[override]
+    async def on_tool_start(self, context, agent, tool) -> None:  # type: ignore[override]
         tool_input = getattr(context, "tool_input", None)
         call = ToolCallRecord(
             agent_id=agent.name,
@@ -122,7 +122,7 @@ class TraceCollector(RunHooks):
             tool_input=call.tool_input,
         )
 
-    def on_tool_end(self, context, agent, tool, result) -> None:  # type: ignore[override]
+    async def on_tool_end(self, context, agent, tool, result) -> None:  # type: ignore[override]
         tool_name = getattr(tool, "name", tool.__class__.__name__)
         for call in reversed(self.tool_calls):
             if call.tool_name == tool_name and call.agent_id == agent.name and call.finished_at is None:

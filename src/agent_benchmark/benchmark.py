@@ -4,7 +4,7 @@ from importlib.metadata import PackageNotFoundError, version
 from enum import Enum
 from pathlib import Path
 from time import perf_counter
-from typing import Literal
+from typing import Callable, Literal
 
 from pydantic import ValidationError
 
@@ -72,7 +72,12 @@ def _classify_error(exc: Exception) -> str:
 
 
 class BenchmarkService:
-    def __init__(self, root_dir: Path, executor: AgentExecutor | None = None) -> None:
+    def __init__(
+        self,
+        root_dir: Path,
+        executor: AgentExecutor | None = None,
+        progress_callback: Callable[[str], None] | None = None,
+    ) -> None:
         self.root_dir = root_dir.resolve()
         self.config_loader = ConfigLoader(self.root_dir)
         self.task_loader = TaskLoader(self.config_loader)
@@ -84,6 +89,11 @@ class BenchmarkService:
         self.router_runner = RouterStrategyRunner(self.executor)
         self.aggregate_writer = AggregateWriter()
         self.sdk_versions = _build_sdk_versions()
+        self.progress_callback = progress_callback
+
+    def _emit_progress(self, message: str) -> None:
+        if self.progress_callback is not None:
+            self.progress_callback(message)
 
     def validate_task(self, task_dir: Path) -> ValidationReport:
         return validate_task_dir(task_dir, self.config_loader)
@@ -102,6 +112,9 @@ class BenchmarkService:
             raise ValueError("\n".join(report.errors))
         task = self.task_loader.load(task_dir)
         run_batch_id = batch_id or self._generate_batch_id()
+        self._emit_progress(
+            f"[batch {run_batch_id}] Starting task {task.config.id} with strategy={_normalize_strategy(strategy) or 'all'}"
+        )
         batch_dir = self.root_dir / "runs" / run_batch_id
         writer = RawResultWriter(batch_dir)
         manifest = BatchManifest(batch_id=run_batch_id, started_at=utc_now_iso())
@@ -119,12 +132,16 @@ class BenchmarkService:
             manifest.finished_at = utc_now_iso()
             manifest.status = "completed"
             writer.write_manifest(manifest)
+            self._emit_progress(
+                f"[batch {run_batch_id}] Finished task {task.config.id}: {len(results)} run(s) completed"
+            )
             return results
         except Exception:
             manifest.finished_at = utc_now_iso()
             manifest.status = "failed"
             manifest.aborted = True
             writer.write_manifest(manifest)
+            self._emit_progress(f"[batch {run_batch_id}] Task {task.config.id} failed")
             raise
 
     def run_all(
@@ -143,7 +160,11 @@ class BenchmarkService:
         writer.write_manifest(manifest)
 
         all_results: list[SingleMultiRunResult | RouterRunResult] = []
-        for task_dir in sorted(path for path in tasks_root.iterdir() if path.is_dir()):
+        task_dirs = sorted(path for path in tasks_root.iterdir() if path.is_dir())
+        self._emit_progress(
+            f"[batch {run_batch_id}] Starting run-all for {len(task_dirs)} task(s) with strategy={_normalize_strategy(strategy) or 'all'}"
+        )
+        for task_index, task_dir in enumerate(task_dirs, start=1):
             report = self.validate_task(task_dir)
             if not report.valid:
                 manifest.aborted = True
@@ -153,6 +174,9 @@ class BenchmarkService:
                 writer.write_manifest(manifest)
                 raise ValueError("\n".join(report.errors))
             task = self.task_loader.load(task_dir)
+            self._emit_progress(
+                f"[batch {run_batch_id}] Task {task_index}/{len(task_dirs)}: {task.config.id}"
+            )
             try:
                 all_results.extend(
                     self._run_loaded_task(
@@ -170,11 +194,17 @@ class BenchmarkService:
                 manifest.status = "failed"
                 manifest.finished_at = utc_now_iso()
                 writer.write_manifest(manifest)
+                self._emit_progress(
+                    f"[batch {run_batch_id}] Aborted during task {task.config.id}"
+                )
                 raise
 
         manifest.finished_at = utc_now_iso()
         manifest.status = "completed"
         writer.write_manifest(manifest)
+        self._emit_progress(
+            f"[batch {run_batch_id}] Finished run-all: {len(all_results)} run(s) completed"
+        )
         return all_results
 
     def aggregate(self, path: Path, formats: set[str] | None = None) -> dict[str, str]:
@@ -195,12 +225,21 @@ class BenchmarkService:
         cleanup_workspaces: bool,
     ) -> list[SingleMultiRunResult | RouterRunResult]:
         results: list[SingleMultiRunResult | RouterRunResult] = []
-        for strategy_name, repetition_index in self._iter_strategy_runs(task, strategy, repetitions_override):
+        planned_runs = self._iter_strategy_runs(task, strategy, repetitions_override)
+        for run_index, (strategy_name, repetition_index) in enumerate(planned_runs, start=1):
             run_id = self._build_run_id(task.config.id, strategy_name, repetition_index)
             workspace_handle = None
             started_at = utc_now_iso()
             started_counter = perf_counter()
             artifacts: StrategyArtifacts | None = None
+            run_label = (
+                strategy_name
+                if repetition_index is None
+                else f"{strategy_name} rep {repetition_index}"
+            )
+            self._emit_progress(
+                f"[batch {manifest.batch_id}] [{task.config.id}] Run {run_index}/{len(planned_runs)} starting: {run_label}"
+            )
             try:
                 if strategy_name in {"single", "multi"}:
                     workspace_handle = create_workspace(
@@ -253,6 +292,10 @@ class BenchmarkService:
                 manifest.completed_runs.append(run_id)
                 writer.write_manifest(manifest)
                 results.append(result_model)
+                self._emit_progress(
+                    f"[batch {manifest.batch_id}] [{task.config.id}] Run {run_index}/{len(planned_runs)} completed: "
+                    f"{run_label} in {latency:.1f}s, tokens={usage.total_tokens}, cost=${usage.estimated_cost:.6f}"
+                )
                 if cleanup_workspaces and workspace_handle is not None:
                     cleanup_workspace(workspace_handle.workspace_path)
             except Exception as exc:
@@ -277,6 +320,10 @@ class BenchmarkService:
                 manifest.failed_run_id = run_id
                 manifest.errors.append(f"{run_id}: {exc}")
                 writer.write_manifest(manifest)
+                self._emit_progress(
+                    f"[batch {manifest.batch_id}] [{task.config.id}] Run {run_index}/{len(planned_runs)} failed: "
+                    f"{run_label} ({_classify_error(exc)}: {exc})"
+                )
                 raise
         return results
 

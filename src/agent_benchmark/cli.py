@@ -4,14 +4,17 @@ from pathlib import Path
 from typing import Annotated
 
 import typer
+from dotenv import load_dotenv
 
 from agent_benchmark.benchmark import BenchmarkService, StrategyName
+
+load_dotenv()
 
 app = typer.Typer(help="Agent benchmark CLI")
 
 
 def _service() -> BenchmarkService:
-    return BenchmarkService(Path.cwd())
+    return BenchmarkService(Path.cwd(), progress_callback=typer.echo)
 
 
 @app.command()
