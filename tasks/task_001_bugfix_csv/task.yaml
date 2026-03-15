@@ -2,8 +2,7 @@ id: task_001_bugfix_csv
 name: Fix CSV quoted comma parsing
 category: coding
 description: Fix a parser bug where commas inside quotes are split incorrectly.
-repetitions: 2
-timeout_sec: 600
+timeout_sec: 1800
 allowed_tools:
   - list_files
   - read_file
@@ -14,11 +13,11 @@ allowed_tools:
 single_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 20
+  max_steps: 48
 multi_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 10
+  max_steps: 48
   architecture:
     type: pipeline
     agents:
@@ -35,5 +34,5 @@ multi_strategy:
 router_strategy:
   enabled: true
   temperature: 0.0
-  max_steps: 5
+  max_steps: 16
   route_candidates: [single, multi, coding_simple, coding_multi_file]

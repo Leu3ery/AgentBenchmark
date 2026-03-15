@@ -46,5 +46,5 @@ def test_aggregate_outputs_csv_and_jsonl(project_copy: Path) -> None:
     assert csv_path.exists()
     with csv_path.open("r", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
-    assert len(rows) == 3
+    assert len(rows) == 5
     assert {row["strategy"] for row in rows} == {"single", "router"}

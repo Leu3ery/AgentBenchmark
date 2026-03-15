@@ -2,8 +2,7 @@ id: task_005_web_research
 name: Live web research comparison task
 category: web_research
 description: Research a live topic across multiple sources and answer three questions.
-repetitions: 1
-timeout_sec: 600
+timeout_sec: 1800
 nondeterministic: true
 allowed_tools:
   - list_files
@@ -14,11 +13,11 @@ allowed_tools:
 single_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 16
+  max_steps: 48
 multi_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 8
+  max_steps: 48
   architecture:
     type: pipeline
     agents:

@@ -48,7 +48,7 @@ def test_run_task_single_and_router(project_copy: Path) -> None:
         strategy="router",
         batch_id="batch_router",
     )
-    assert len(single_results) == 2
+    assert len(single_results) == 4
     assert single_results[0].strategy == "single"
     assert len(router_results) == 1
     assert router_results[0].strategy == "router"

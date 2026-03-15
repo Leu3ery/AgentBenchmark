@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 class GlobalConfig(BaseModel):
-    default_timeout_sec: int = 600
+    default_timeout_sec: int = 1800
     default_repetitions: int = 1
     default_batch_prefix: str = "batch"
 
@@ -54,7 +54,7 @@ class SingleStrategyConfig(BaseModel):
     enabled: bool = True
     model: str
     temperature: float = 0.2
-    max_steps: int = 20
+    max_steps: int = 48
 
 
 class MultiAgentConfig(BaseModel):
@@ -81,7 +81,7 @@ class MultiStrategyConfig(BaseModel):
     enabled: bool = True
     model: str
     temperature: float = 0.2
-    max_steps: int = 20
+    max_steps: int = 48
     architecture: MultiArchitectureConfig
 
 
@@ -89,7 +89,7 @@ class RouterStrategyConfig(BaseModel):
     enabled: bool = True
     model: str
     temperature: float = 0.0
-    max_steps: int = 5
+    max_steps: int = 16
     route_candidates: list[str]
 
     @field_validator("route_candidates")
@@ -106,7 +106,7 @@ class TaskConfig(BaseModel):
     category: str
     description: str
     repetitions: int = 1
-    timeout_sec: int = 600
+    timeout_sec: int = 1800
     input_dir: str = "input"
     evaluation_dir: str = "evaluation"
     prompt_file: str = "prompt.md"

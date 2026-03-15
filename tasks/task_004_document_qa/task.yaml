@@ -2,8 +2,7 @@ id: task_004_document_qa
 name: Multi-document QA synthesis
 category: document_qa
 description: Answer a small set of questions using several local documents.
-repetitions: 2
-timeout_sec: 600
+timeout_sec: 1800
 allowed_tools:
   - list_files
   - read_file
@@ -12,11 +11,11 @@ allowed_tools:
 single_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 16
+  max_steps: 48
 multi_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 8
+  max_steps: 48
   architecture:
     type: pipeline
     agents:

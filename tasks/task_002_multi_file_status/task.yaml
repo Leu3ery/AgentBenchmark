@@ -2,8 +2,7 @@ id: task_002_multi_file_status
 name: Add archived status across backend and validation
 category: coding
 description: Add a new archived status value across backend constants and validation schema.
-repetitions: 2
-timeout_sec: 600
+timeout_sec: 1800
 allowed_tools:
   - list_files
   - read_file
@@ -14,11 +13,11 @@ allowed_tools:
 single_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 24
+  max_steps: 48
 multi_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 12
+  max_steps: 48
   architecture:
     type: pipeline
     agents:

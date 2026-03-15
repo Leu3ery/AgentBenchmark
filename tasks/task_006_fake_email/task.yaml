@@ -2,8 +2,7 @@ id: task_006_fake_email
 name: Fake email workflow
 category: workflow
 description: Read fake inbox messages and draft replies as artifacts instead of sending real emails.
-repetitions: 2
-timeout_sec: 600
+timeout_sec: 1800
 allowed_tools:
   - list_files
   - read_file
@@ -14,11 +13,11 @@ allowed_tools:
 single_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 18
+  max_steps: 48
 multi_strategy:
   enabled: true
   temperature: 0.2
-  max_steps: 10
+  max_steps: 48
   architecture:
     type: pipeline
     agents:
