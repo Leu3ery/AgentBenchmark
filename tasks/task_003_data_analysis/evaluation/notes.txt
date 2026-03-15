@@ -1,1 +1,9 @@
-Expected top 3 by absolute growth: growth, support, analytics.
+Expected top 3 by absolute revenue growth:
+- growth (+130)
+- support (+95)
+- analytics (+80)
+
+Useful evaluator checks:
+- the answer uses absolute growth, not percentage growth
+- platform is recognized as a slight decline (-5)
+- the summary is understandable to a non-technical stakeholder

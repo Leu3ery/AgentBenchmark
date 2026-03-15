@@ -1,1 +1,7 @@
-One helpful reply draft for email_001 and no reply for email_002.
+Reply drafts should exist for:
+- email_001
+- email_003
+
+No reply drafts should exist for:
+- email_002
+- email_004

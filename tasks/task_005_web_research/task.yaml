@@ -6,6 +6,8 @@ repetitions: 1
 timeout_sec: 600
 nondeterministic: true
 allowed_tools:
+  - list_files
+  - read_file
   - web_search
   - open_url
   - write_file
@@ -22,14 +24,14 @@ multi_strategy:
     agents:
       - id: researcher
         role: Gather the best sources and extract evidence.
-        allowed_tools: [web_search, open_url]
+        allowed_tools: [list_files, read_file, web_search, open_url]
       - id: writer
-        role: Answer the questions clearly with cited source notes.
-        allowed_tools: [write_file]
+        role: Answer the questions clearly with cited source notes and save a structured artifact.
+        allowed_tools: [read_file, write_file]
       - id: reviewer
-        role: Check whether the answer covers all questions and caveats.
-        allowed_tools: [open_url]
+        role: Check whether the answer covers all questions, uses multiple sources, and states uncertainty.
+        allowed_tools: [read_file, open_url]
     flow: [researcher, writer, reviewer]
 router_strategy:
   enabled: true
-  route_candidates: [single, multi, docs_qa, data_analysis]
+  route_candidates: [single, multi, docs_qa, data_analysis, web_research]

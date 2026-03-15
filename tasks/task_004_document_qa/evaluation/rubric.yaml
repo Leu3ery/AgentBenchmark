@@ -1,3 +1,4 @@
 dimensions:
   correctness: "Answers are grounded in the provided docs."
-  completeness: "All three questions are answered."
+  completeness: "All four questions are answered."
+  synthesis: "The response combines related documents when useful and cites the right source notes."

@@ -1,1 +1,6 @@
-Expected behavior: reply to email_001, skip email_002, and store any reply artifact in the workspace.
+Expected behavior:
+- reply to `email_001` with workshop confirmation details
+- skip `email_002` because it is only a payment confirmation
+- reply to `email_003` with both the onboarding checklist location and docs portal URL
+- skip `email_004` because it is only a thank-you note
+- store reply artifacts in the workspace via the fake reply tool

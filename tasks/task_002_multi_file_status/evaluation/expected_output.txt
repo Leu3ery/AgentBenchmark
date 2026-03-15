@@ -1,1 +1,1 @@
-The code should allow archived in both constants and validation.
+The code should allow `archived` in the status catalog, validation, and API serialization, with label `Archived`.

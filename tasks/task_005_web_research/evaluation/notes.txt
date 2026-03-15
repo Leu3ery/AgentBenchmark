@@ -1,1 +1,8 @@
 This task is reviewed manually because the web is live and time-sensitive.
+
+Evaluator checks:
+- the answer uses more than one source
+- at least one source is primary or official if available
+- each of the three questions is answered directly
+- the response includes dates or makes recency explicit
+- uncertainty is stated clearly rather than hidden

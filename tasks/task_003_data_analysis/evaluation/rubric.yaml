@@ -1,3 +1,4 @@
 dimensions:
   correctness: "Top 3 categories match the dataset."
-  completeness: "Summary mentions the strongest trend."
+  completeness: "Summary covers both strongest growth and at least one weaker trend."
+  communication: "The summary is concise and stakeholder-friendly."

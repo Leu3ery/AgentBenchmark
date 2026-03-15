@@ -1,1 +1,4 @@
-Check that archived is added everywhere relevant and no existing statuses are removed.
+Check that:
+- `archived` is added consistently across backend, validation, and serialization
+- existing statuses are not removed
+- `archived` is treated as a terminal state

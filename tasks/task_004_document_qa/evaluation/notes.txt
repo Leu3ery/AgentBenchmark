@@ -1,1 +1,10 @@
-Expected answers: reliability engineering, 15 minutes, customer retention improvement.
+Expected answers:
+- incident review owner: reliability engineering team
+- Sev-1 first response target: 15 minutes
+- KPI tied to retention: improve customer retention by 4 points
+- external updates during Sev-1: customer communications
+
+Evaluator checks:
+- answers should mention the right document sources
+- the final answer should stay grounded in local docs only
+- synthesis should be concise, not a long excerpt dump
