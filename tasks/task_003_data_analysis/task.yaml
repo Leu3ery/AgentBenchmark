@@ -1,0 +1,35 @@
+id: task_003_data_analysis
+name: Top 3 categories by growth
+category: data_analysis
+description: Compute the top 3 categories by growth and produce a short summary.
+repetitions: 2
+timeout_sec: 600
+allowed_tools:
+  - list_files
+  - read_file
+  - python
+  - write_file
+single_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 18
+multi_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 10
+  architecture:
+    type: pipeline
+    agents:
+      - id: analyst
+        role: Inspect the dataset and compute growth.
+        allowed_tools: [list_files, read_file, python]
+      - id: writer
+        role: Turn the analysis into a concise textual summary and save any artifact if useful.
+        allowed_tools: [read_file, write_file, python]
+      - id: reviewer
+        role: Check the reported ranking and summary for obvious issues.
+        allowed_tools: [read_file, python]
+    flow: [analyst, writer, reviewer]
+router_strategy:
+  enabled: true
+  route_candidates: [single, multi, data_analysis]

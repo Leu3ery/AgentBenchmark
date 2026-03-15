@@ -1,0 +1,4 @@
+dimensions:
+  correctness: "Claims should be grounded in current sources."
+  completeness: "All three questions are covered."
+  caveats: "The answer notes uncertainty where appropriate."

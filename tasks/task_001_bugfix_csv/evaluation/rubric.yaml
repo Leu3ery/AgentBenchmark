@@ -1,0 +1,4 @@
+dimensions:
+  correctness: "Quoted commas are preserved."
+  completeness: "Any touched tests still pass."
+  efficiency: "The fix is targeted and easy to review."

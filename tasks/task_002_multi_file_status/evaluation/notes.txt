@@ -1,0 +1,1 @@
+Check that archived is added everywhere relevant and no existing statuses are removed.

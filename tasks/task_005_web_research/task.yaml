@@ -1,0 +1,35 @@
+id: task_005_web_research
+name: Live web research comparison task
+category: web_research
+description: Research a live topic across multiple sources and answer three questions.
+repetitions: 1
+timeout_sec: 600
+nondeterministic: true
+allowed_tools:
+  - web_search
+  - open_url
+  - write_file
+single_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 16
+multi_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 8
+  architecture:
+    type: pipeline
+    agents:
+      - id: researcher
+        role: Gather the best sources and extract evidence.
+        allowed_tools: [web_search, open_url]
+      - id: writer
+        role: Answer the questions clearly with cited source notes.
+        allowed_tools: [write_file]
+      - id: reviewer
+        role: Check whether the answer covers all questions and caveats.
+        allowed_tools: [open_url]
+    flow: [researcher, writer, reviewer]
+router_strategy:
+  enabled: true
+  route_candidates: [single, multi, docs_qa, data_analysis]

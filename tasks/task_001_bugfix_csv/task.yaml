@@ -1,0 +1,39 @@
+id: task_001_bugfix_csv
+name: Fix CSV quoted comma parsing
+category: coding
+description: Fix a parser bug where commas inside quotes are split incorrectly.
+repetitions: 2
+timeout_sec: 600
+allowed_tools:
+  - list_files
+  - read_file
+  - search_in_files
+  - write_file
+  - run_tests
+  - terminal
+single_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 20
+multi_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 10
+  architecture:
+    type: pipeline
+    agents:
+      - id: planner
+        role: Inspect the parser layout and propose the minimal fix.
+        allowed_tools: [list_files, read_file, search_in_files]
+      - id: coder
+        role: Edit the parser and any public tests needed for the fix.
+        allowed_tools: [read_file, search_in_files, write_file, run_tests, terminal]
+      - id: reviewer
+        role: Re-run checks and note any remaining risk.
+        allowed_tools: [read_file, run_tests]
+    flow: [planner, coder, reviewer]
+router_strategy:
+  enabled: true
+  temperature: 0.0
+  max_steps: 5
+  route_candidates: [single, multi, coding_simple, coding_multi_file]

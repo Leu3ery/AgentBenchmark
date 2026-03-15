@@ -1,0 +1,3 @@
+dimensions:
+  correctness: "Top 3 categories match the dataset."
+  completeness: "Summary mentions the strongest trend."

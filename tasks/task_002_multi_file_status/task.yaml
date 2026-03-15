@@ -1,0 +1,37 @@
+id: task_002_multi_file_status
+name: Add archived status across backend and validation
+category: coding
+description: Add a new archived status value across backend constants and validation schema.
+repetitions: 2
+timeout_sec: 600
+allowed_tools:
+  - list_files
+  - read_file
+  - search_in_files
+  - write_file
+  - run_tests
+  - terminal
+single_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 24
+multi_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 12
+  architecture:
+    type: pipeline
+    agents:
+      - id: planner
+        role: Find every place where the status enum is defined or validated.
+        allowed_tools: [list_files, read_file, search_in_files]
+      - id: coder
+        role: Update backend and validation files consistently.
+        allowed_tools: [read_file, search_in_files, write_file, run_tests, terminal]
+      - id: reviewer
+        role: Verify consistency and regressions.
+        allowed_tools: [read_file, run_tests]
+    flow: [planner, coder, reviewer]
+router_strategy:
+  enabled: true
+  route_candidates: [single, multi, coding_multi_file, docs_qa]

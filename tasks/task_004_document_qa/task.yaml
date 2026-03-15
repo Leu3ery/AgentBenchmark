@@ -1,0 +1,35 @@
+id: task_004_document_qa
+name: Multi-document QA synthesis
+category: document_qa
+description: Answer a small set of questions using several local documents.
+repetitions: 2
+timeout_sec: 600
+allowed_tools:
+  - list_files
+  - read_file
+  - search_in_files
+  - write_file
+single_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 16
+multi_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 8
+  architecture:
+    type: pipeline
+    agents:
+      - id: retriever
+        role: Find the relevant passages in the local documents.
+        allowed_tools: [list_files, read_file, search_in_files]
+      - id: synthesizer
+        role: Produce concise answers to the questions using the evidence found.
+        allowed_tools: [read_file, write_file]
+      - id: reviewer
+        role: Check whether each answer is supported by the docs.
+        allowed_tools: [read_file, search_in_files]
+    flow: [retriever, synthesizer, reviewer]
+router_strategy:
+  enabled: true
+  route_candidates: [single, multi, docs_qa]

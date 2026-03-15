@@ -1,0 +1,35 @@
+id: task_006_fake_email
+name: Fake email workflow
+category: workflow
+description: Read fake inbox messages and draft replies as artifacts instead of sending real emails.
+repetitions: 2
+timeout_sec: 600
+allowed_tools:
+  - list_emails
+  - get_email
+  - send_reply
+  - write_file
+single_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 18
+multi_strategy:
+  enabled: true
+  temperature: 0.2
+  max_steps: 10
+  architecture:
+    type: pipeline
+    agents:
+      - id: triage
+        role: Review the inbox and determine which emails need a reply.
+        allowed_tools: [list_emails, get_email]
+      - id: responder
+        role: Draft the reply artifacts for the selected emails.
+        allowed_tools: [get_email, send_reply, write_file]
+      - id: reviewer
+        role: Check the drafts for tone and completeness.
+        allowed_tools: [get_email]
+    flow: [triage, responder, reviewer]
+router_strategy:
+  enabled: true
+  route_candidates: [single, multi, docs_qa]

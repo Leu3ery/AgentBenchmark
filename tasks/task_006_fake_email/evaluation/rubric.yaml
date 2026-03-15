@@ -1,0 +1,4 @@
+dimensions:
+  correctness: "Only actionable emails receive a reply."
+  completeness: "The reply artifact is stored in the workspace."
+  tone: "Reply is polite and concise."

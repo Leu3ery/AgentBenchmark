@@ -1,0 +1,3 @@
+dimensions:
+  correctness: "Answers are grounded in the provided docs."
+  completeness: "All three questions are answered."

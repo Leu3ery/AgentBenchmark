@@ -1,0 +1,5 @@
+STATUSES = [
+    "draft",
+    "active",
+    "disabled",
+]

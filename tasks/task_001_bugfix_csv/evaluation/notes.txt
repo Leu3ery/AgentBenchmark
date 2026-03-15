@@ -1,0 +1,4 @@
+Hidden evaluator note:
+- The correct implementation must keep commas inside quoted fields within the same parsed value.
+- The agent should not overcomplicate the parser or introduce unnecessary refactors.
+- A good answer mentions that public tests were updated or rerun.

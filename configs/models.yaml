@@ -1,0 +1,7 @@
+default_model: gpt-5-mini
+router_model: gpt-5-mini
+models:
+  gpt-5-mini:
+    prompt_cost_per_1m: 0.25
+    completion_cost_per_1m: 2.00
+    notes: "Low-cost default for benchmark smoke runs and repeated test execution."

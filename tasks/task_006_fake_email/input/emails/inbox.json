@@ -1,0 +1,14 @@
+[
+  {
+    "id": "email_001",
+    "from": "alex@example.com",
+    "subject": "Need confirmation on the workshop date",
+    "body": "Can you confirm whether the workshop is still planned for next Thursday?"
+  },
+  {
+    "id": "email_002",
+    "from": "billing@example.com",
+    "subject": "Invoice received",
+    "body": "This is just a confirmation that we received your payment."
+  }
+]

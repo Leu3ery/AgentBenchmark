@@ -1,0 +1,57 @@
+tools:
+  list_files:
+    id: list_files
+    description: List files in the workspace.
+    provider: custom
+  read_file:
+    id: read_file
+    description: Read a file from the workspace.
+    provider: custom
+  search_in_files:
+    id: search_in_files
+    description: Search within workspace files.
+    provider: custom
+  write_file:
+    id: write_file
+    description: Write files in the workspace.
+    provider: custom
+  run_tests:
+    id: run_tests
+    description: Run the local test suite.
+    provider: custom
+  terminal:
+    id: terminal
+    description: Execute a shell command inside the workspace.
+    provider: custom
+  execute_shell:
+    id: execute_shell
+    description: Execute a shell command inside the workspace.
+    provider: custom
+  python:
+    id: python
+    description: Execute Python code inside the workspace.
+    provider: custom
+  web_search:
+    id: web_search
+    description: Live web search.
+    provider: openai
+    supports_workspace: false
+    nondeterministic: true
+  open_url:
+    id: open_url
+    description: Fetch a web page by URL.
+    provider: custom
+    supports_workspace: false
+    nondeterministic: true
+  list_emails:
+    id: list_emails
+    description: List fake inbox messages.
+    provider: custom
+  get_email:
+    id: get_email
+    description: Read one fake inbox message.
+    provider: custom
+  send_reply:
+    id: send_reply
+    description: Save a fake reply artifact.
+    provider: custom
