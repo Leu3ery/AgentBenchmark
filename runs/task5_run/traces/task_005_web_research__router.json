@@ -1,13 +1,13 @@
 [
   {
-    "timestamp": "2026-03-15T14:22:40+00:00",
+    "timestamp": "2026-03-15T17:28:48+00:00",
     "agent_id": "task_005_web_research-router",
     "event_type": "agent_start",
     "message": "Agent task_005_web_research-router started",
     "payload": {}
   },
   {
-    "timestamp": "2026-03-15T14:22:40+00:00",
+    "timestamp": "2026-03-15T17:28:48+00:00",
     "agent_id": "task_005_web_research-router",
     "event_type": "llm_start",
     "message": null,
@@ -17,26 +17,26 @@
     }
   },
   {
-    "timestamp": "2026-03-15T14:22:46+00:00",
+    "timestamp": "2026-03-15T17:28:54+00:00",
     "agent_id": "task_005_web_research-router",
     "event_type": "llm_end",
     "message": null,
     "payload": {
-      "response_id": "resp_0788dbd7e4f883e40069b6c0b0d72481949cfa908a4392d67d",
+      "response_id": "resp_07f0741a8576550c0069b6ec51a03c81969e32512d34032ea1",
       "usage": {
-        "input_tokens": 307,
-        "output_tokens": 290,
-        "total_tokens": 597
+        "input_tokens": 296,
+        "output_tokens": 218,
+        "total_tokens": 514
       }
     }
   },
   {
-    "timestamp": "2026-03-15T14:22:46+00:00",
+    "timestamp": "2026-03-15T17:28:54+00:00",
     "agent_id": "task_005_web_research-router",
     "event_type": "agent_end",
     "message": "Agent task_005_web_research-router completed",
     "payload": {
-      "output_preview": "{\"selected_route\": \"web_research\", \"reason\": \"Task explicitly requires live, multi-source internet research with preference for primary/official sources and time-stamped citations; the web_research route is designed for live web investigations and synthesizing multiple sources while noting uncertainty.\", \"confidence\": 0.9}"
+      "output_preview": "{\"selected_route\": \"multi\", \"reason\": \"The task explicitly requires using multiple independent sources (preferably primary/official) and synthesizing live web information; the multi route supports aggregating and cross-checking across several sources to meet those requirements and to surface timing ambiguities.\", \"confidence\": 0.9}"
     }
   }
 ]
