@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="390" viewBox="0 0 1240 390">
+<rect width="1240" height="390" fill="#FFFFFF" />
+<text x="40" y="40" fill="#17202A" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700">Benchmark snapshot: task means by solver</text>
+<text x="40" y="64" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13">Six tasks, four reviewed runs per solver.</text>
+<rect x="40" y="96" width="360" height="248" rx="16" fill="#FFFFFF" stroke="#D8DEE7" />
+<text x="58" y="126" fill="#17202A" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700">A. Mean review score by task</text>
+<text x="58" y="148" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Higher is better.</text>
+<line x1="58" y1="190" x2="382" y2="190" stroke="#E9EDF3" />
+<text x="251.5" y="182" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" text-anchor="middle">single</text>
+<text x="338.5" y="182" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" text-anchor="middle">multi</text>
+<text x="58" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">CSV bugfix</text>
+<rect x="208.0" y="194" width="79.0" height="18" rx="6" fill="#5E8188" />
+<text x="247.5" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">7.97</text>
+<rect x="295.0" y="194" width="79.0" height="18" rx="6" fill="#63858C" />
+<text x="334.5" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">7.85</text>
+<rect x="58" y="216" width="324" height="24" fill="#FBFCFE" />
+<text x="58" y="230" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Multi-file status</text>
+<rect x="208.0" y="218" width="79.0" height="18" rx="6" fill="#3C666F" />
+<text x="247.5" y="230" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">8.78</text>
+<rect x="295.0" y="218" width="79.0" height="18" rx="6" fill="#4F757D" />
+<text x="334.5" y="230" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">8.32</text>
+<text x="58" y="254" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Data analysis</text>
+<rect x="208.0" y="242" width="79.0" height="18" rx="6" fill="#295761" />
+<text x="247.5" y="254" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">9.2</text>
+<rect x="295.0" y="242" width="79.0" height="18" rx="6" fill="#3C666F" />
+<text x="334.5" y="254" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">8.78</text>
+<rect x="58" y="264" width="324" height="24" fill="#FBFCFE" />
+<text x="58" y="278" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Document QA</text>
+<rect x="208.0" y="266" width="79.0" height="18" rx="6" fill="#285660" />
+<text x="247.5" y="278" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">9.22</text>
+<rect x="295.0" y="266" width="79.0" height="18" rx="6" fill="#305C66" />
+<text x="334.5" y="278" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">9.05</text>
+<text x="58" y="302" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Web research</text>
+<rect x="208.0" y="290" width="79.0" height="18" rx="6" fill="#346069" />
+<text x="247.5" y="302" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">8.95</text>
+<rect x="295.0" y="290" width="79.0" height="18" rx="6" fill="#F4F7F9" />
+<text x="334.5" y="302" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">4.48</text>
+<rect x="58" y="312" width="324" height="24" fill="#FBFCFE" />
+<text x="58" y="326" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Email triage</text>
+<rect x="208.0" y="314" width="79.0" height="18" rx="6" fill="#24535D" />
+<text x="247.5" y="326" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">9.32</text>
+<rect x="295.0" y="314" width="79.0" height="18" rx="6" fill="#346069" />
+<text x="334.5" y="326" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">8.95</text>
+<rect x="40" y="96" width="360" height="248" rx="16" fill="none" stroke="#D8DEE7" />
+<rect x="440" y="96" width="360" height="248" rx="16" fill="#FFFFFF" stroke="#D8DEE7" />
+<text x="458" y="126" fill="#17202A" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700">B. Mean cost by task</text>
+<text x="458" y="148" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Estimated cost per run.</text>
+<line x1="458" y1="190" x2="782" y2="190" stroke="#E9EDF3" />
+<text x="651.5" y="182" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" text-anchor="middle">single</text>
+<text x="738.5" y="182" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" text-anchor="middle">multi</text>
+<text x="458" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">CSV bugfix</text>
+<rect x="608.0" y="194" width="79.0" height="18" rx="6" fill="#ECDBD3" />
+<text x="647.5" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.90¢</text>
+<rect x="695.0" y="194" width="79.0" height="18" rx="6" fill="#D9B9AD" />
+<text x="734.5" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">1.8¢</text>
+<rect x="458" y="216" width="324" height="24" fill="#FBFCFE" />
+<text x="458" y="230" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Multi-file status</text>
+<rect x="608.0" y="218" width="79.0" height="18" rx="6" fill="#F2E6E0" />
+<text x="647.5" y="230" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.60¢</text>
+<rect x="695.0" y="218" width="79.0" height="18" rx="6" fill="#CFA699" />
+<text x="734.5" y="230" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">2.2¢</text>
+<text x="458" y="254" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Data analysis</text>
+<rect x="608.0" y="242" width="79.0" height="18" rx="6" fill="#F9F2ED" />
+<text x="647.5" y="254" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.29¢</text>
+<rect x="695.0" y="242" width="79.0" height="18" rx="6" fill="#ECDBD4" />
+<text x="734.5" y="254" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.89¢</text>
+<rect x="458" y="264" width="324" height="24" fill="#FBFCFE" />
+<text x="458" y="278" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Document QA</text>
+<rect x="608.0" y="266" width="79.0" height="18" rx="6" fill="#FAF4EF" />
+<text x="647.5" y="278" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.25¢</text>
+<rect x="695.0" y="266" width="79.0" height="18" rx="6" fill="#F2E6DF" />
+<text x="734.5" y="278" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.61¢</text>
+<text x="458" y="302" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Web research</text>
+<rect x="608.0" y="290" width="79.0" height="18" rx="6" fill="#BA806F" />
+<text x="647.5" y="302" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">3.2¢</text>
+<rect x="695.0" y="290" width="79.0" height="18" rx="6" fill="#9C4B34" />
+<text x="734.5" y="302" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">4.6¢</text>
+<rect x="458" y="312" width="324" height="24" fill="#FBFCFE" />
+<text x="458" y="326" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Email triage</text>
+<rect x="608.0" y="314" width="79.0" height="18" rx="6" fill="#F8F1EB" />
+<text x="647.5" y="326" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.33¢</text>
+<rect x="695.0" y="314" width="79.0" height="18" rx="6" fill="#E1C8BE" />
+<text x="734.5" y="326" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">1.4¢</text>
+<rect x="440" y="96" width="360" height="248" rx="16" fill="none" stroke="#D8DEE7" />
+<rect x="840" y="96" width="360" height="248" rx="16" fill="#FFFFFF" stroke="#D8DEE7" />
+<text x="858" y="126" fill="#17202A" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700">C. Mean latency by task</text>
+<text x="858" y="148" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Measured in seconds.</text>
+<line x1="858" y1="190" x2="1182" y2="190" stroke="#E9EDF3" />
+<text x="1051.5" y="182" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" text-anchor="middle">single</text>
+<text x="1138.5" y="182" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" text-anchor="middle">multi</text>
+<text x="858" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">CSV bugfix</text>
+<rect x="1008.0" y="194" width="79.0" height="18" rx="6" fill="#D2DDE0" />
+<text x="1047.5" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">40.1s</text>
+<rect x="1095.0" y="194" width="79.0" height="18" rx="6" fill="#90A8AE" />
+<text x="1134.5" y="206" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">88.3s</text>
+<rect x="858" y="216" width="324" height="24" fill="#FBFCFE" />
+<text x="858" y="230" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Multi-file status</text>
+<rect x="1008.0" y="218" width="79.0" height="18" rx="6" fill="#E0E8EA" />
+<text x="1047.5" y="230" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">29.9s</text>
+<rect x="1095.0" y="218" width="79.0" height="18" rx="6" fill="#93ABB1" />
+<text x="1134.5" y="230" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">85.7s</text>
+<text x="858" y="254" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Data analysis</text>
+<rect x="1008.0" y="242" width="79.0" height="18" rx="6" fill="#EFF3F5" />
+<text x="1047.5" y="254" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">19.5s</text>
+<rect x="1095.0" y="242" width="79.0" height="18" rx="6" fill="#C2D0D4" />
+<text x="1134.5" y="254" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">51.6s</text>
+<rect x="858" y="264" width="324" height="24" fill="#FBFCFE" />
+<text x="858" y="278" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Document QA</text>
+<rect x="1008.0" y="266" width="79.0" height="18" rx="6" fill="#F4F7F9" />
+<text x="1047.5" y="278" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">15.8s</text>
+<rect x="1095.0" y="266" width="79.0" height="18" rx="6" fill="#D4DEE1" />
+<text x="1134.5" y="278" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">39.0s</text>
+<text x="858" y="302" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Web research</text>
+<rect x="1008.0" y="290" width="79.0" height="18" rx="6" fill="#5D8088" />
+<text x="1047.5" y="302" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">124.8s</text>
+<rect x="1095.0" y="290" width="79.0" height="18" rx="6" fill="#24535D" />
+<text x="1134.5" y="302" fill="#FFFFFF" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">166.2s</text>
+<rect x="858" y="312" width="324" height="24" fill="#FBFCFE" />
+<text x="858" y="326" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Email triage</text>
+<rect x="1008.0" y="314" width="79.0" height="18" rx="6" fill="#EEF2F5" />
+<text x="1047.5" y="326" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">20.0s</text>
+<rect x="1095.0" y="314" width="79.0" height="18" rx="6" fill="#A7BBC0" />
+<text x="1134.5" y="326" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">71.1s</text>
+<rect x="840" y="96" width="360" height="248" rx="16" fill="none" stroke="#D8DEE7" />
+</svg>

@@ -13,6 +13,8 @@ The benchmark reads tasks from folders under `tasks/`, runs one or more strategi
 
 It is designed for research and comparison workflows, not as a production agent framework.
 
+![Compact strategy comparison](docs/images/benchmark-results/strategy-comparison-compact.svg)
+
 ## Features
 
 - `single` strategy: one agent solves the task
@@ -279,7 +281,11 @@ Instead, each raw JSON contains empty manual evaluation fields:
 - for `single` and `multi`: overall score, correctness, completeness, efficiency, pass/fail, notes
 - for `router`: overall score, route quality, and notes
 
+![Policy summary and router choices](docs/images/benchmark-results/policy-summary-router-decisions.svg)
+
 The source of truth for manual evaluation is the raw JSON, not the aggregated CSV.
+
+![Run-level variability](docs/images/benchmark-results/run-level-variability.svg)
 
 ## Recommended First Run
 

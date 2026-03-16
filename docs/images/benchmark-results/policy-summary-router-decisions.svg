@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="390" viewBox="0 0 800 390">
+<rect width="800" height="390" fill="#FFFFFF" />
+<text x="40" y="40" fill="#17202A" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700">Policy summary and router choices</text>
+<text x="40" y="64" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13">Router-guided uses the router choice and includes router overhead.</text>
+<rect x="30" y="96" width="360" height="260" rx="16" fill="#FFFFFF" stroke="#D8DEE7" />
+<text x="48" y="126" fill="#17202A" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700">A. Policy summary</text>
+<text x="48" y="148" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Projected mean across tasks.</text>
+<line x1="48" y1="196" x2="372" y2="196" stroke="#E9EDF3" />
+<text x="218.0" y="190" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">Score</text>
+<text x="262.0" y="190" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">Success</text>
+<text x="306.0" y="190" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">Cost</text>
+<text x="350.0" y="190" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">Latency</text>
+<text x="48" y="221" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700">single-only</text>
+<rect x="196.0" y="202" width="36.0" height="28" rx="6" fill="#DCEBF0" />
+<text x="214.0" y="220" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">8.91</text>
+<rect x="240.0" y="202" width="36.0" height="28" rx="6" fill="#DCEBF0" />
+<text x="258.0" y="220" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">100%</text>
+<rect x="284.0" y="202" width="36.0" height="28" rx="6" fill="#DCEBF0" />
+<text x="302.0" y="220" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">0.93¢</text>
+<rect x="328.0" y="202" width="36.0" height="28" rx="6" fill="#DCEBF0" />
+<text x="346.0" y="220" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">41.7s</text>
+<text x="48" y="267" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700">multi-only</text>
+<rect x="196.0" y="248" width="36.0" height="28" rx="6" fill="#F7FAFC" />
+<text x="214.0" y="266" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">7.9</text>
+<rect x="240.0" y="248" width="36.0" height="28" rx="6" fill="#F7FAFC" />
+<text x="258.0" y="266" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">83%</text>
+<rect x="284.0" y="248" width="36.0" height="28" rx="6" fill="#F7FAFC" />
+<text x="302.0" y="266" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">1.9¢</text>
+<rect x="328.0" y="248" width="36.0" height="28" rx="6" fill="#F7FAFC" />
+<text x="346.0" y="266" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">83.7s</text>
+<text x="48" y="313" fill="#6B7584" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700">router-guided</text>
+<rect x="196.0" y="294" width="36.0" height="28" rx="6" fill="#F5F9FB" />
+<text x="214.0" y="312" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">8</text>
+<rect x="240.0" y="294" width="36.0" height="28" rx="6" fill="#F7FAFC" />
+<text x="258.0" y="312" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">83%</text>
+<rect x="284.0" y="294" width="36.0" height="28" rx="6" fill="#F2F7FA" />
+<text x="302.0" y="312" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">1.7¢</text>
+<rect x="328.0" y="294" width="36.0" height="28" rx="6" fill="#F2F7FA" />
+<text x="346.0" y="312" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">75.3s</text>
+<rect x="30" y="96" width="360" height="260" rx="16" fill="none" stroke="#D8DEE7" />
+<rect x="410" y="96" width="360" height="260" rx="16" fill="#FFFFFF" stroke="#D8DEE7" />
+<text x="428" y="126" fill="#17202A" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700">B. Router choices</text>
+<text x="428" y="148" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">Best = higher mean score.</text>
+<text x="476.0" y="184" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">Task</text>
+<text x="563.0" y="184" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">Router</text>
+<text x="641.0" y="184" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">Best</text>
+<text x="709.0" y="184" fill="#5C6773" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" text-anchor="middle">OK</text>
+<line x1="428" y1="190" x2="752" y2="190" stroke="#E9EDF3" />
+<text x="428" y="211" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11">CSV</text>
+<rect x="528" y="196" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="562.0" y="210" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="606" y="196" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="640.0" y="210" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="684" y="196" width="48" height="20" rx="10" fill="#E7F2F3" />
+<text x="709.0" y="210" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Yes</text>
+<rect x="428" y="220" width="324" height="26" fill="#FBFCFE" />
+<text x="428" y="237" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11">Status</text>
+<rect x="528" y="222" width="68" height="20" rx="10" fill="#F8EAE5" />
+<text x="562.0" y="236" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">multi</text>
+<rect x="606" y="222" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="640.0" y="236" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="684" y="222" width="48" height="20" rx="10" fill="#F8EAE5" />
+<text x="709.0" y="236" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">No</text>
+<text x="428" y="263" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11">Analysis</text>
+<rect x="528" y="248" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="562.0" y="262" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="606" y="248" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="640.0" y="262" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="684" y="248" width="48" height="20" rx="10" fill="#E7F2F3" />
+<text x="709.0" y="262" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Yes</text>
+<rect x="428" y="272" width="324" height="26" fill="#FBFCFE" />
+<text x="428" y="289" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11">Doc QA</text>
+<rect x="528" y="274" width="68" height="20" rx="10" fill="#F8EAE5" />
+<text x="562.0" y="288" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">multi</text>
+<rect x="606" y="274" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="640.0" y="288" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="684" y="274" width="48" height="20" rx="10" fill="#F8EAE5" />
+<text x="709.0" y="288" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">No</text>
+<text x="428" y="315" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11">Web</text>
+<rect x="528" y="300" width="68" height="20" rx="10" fill="#F8EAE5" />
+<text x="562.0" y="314" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">multi</text>
+<rect x="606" y="300" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="640.0" y="314" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="684" y="300" width="48" height="20" rx="10" fill="#F8EAE5" />
+<text x="709.0" y="314" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">No</text>
+<rect x="428" y="324" width="324" height="26" fill="#FBFCFE" />
+<text x="428" y="341" fill="#17202A" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11">Email</text>
+<rect x="528" y="326" width="68" height="20" rx="10" fill="#F8EAE5" />
+<text x="562.0" y="340" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">multi</text>
+<rect x="606" y="326" width="68" height="20" rx="10" fill="#E7F2F3" />
+<text x="640.0" y="340" fill="#1F6F78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">single</text>
+<rect x="684" y="326" width="48" height="20" rx="10" fill="#F8EAE5" />
+<text x="709.0" y="340" fill="#B35B3E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">No</text>
+<rect x="410" y="96" width="360" height="260" rx="16" fill="none" stroke="#D8DEE7" />
+</svg>
